@@ -4,6 +4,6 @@
 
 [Acesse o site](http://museudafala.com)
 
-[Acesse o site no github](https://carlos-raposo.github.io/Museu-da-Fala/)
+[Acesse o site no github](https://carlos-raposo.github.io/Museu_da_Fala/inicio/index.html)
 
 ![logo](imagens/logo_300.png)
