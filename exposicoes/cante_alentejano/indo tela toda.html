@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>O Cante Alentejano</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css4/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+	body {
+    font: 'Roboto' sans-serif; font-weight:100;
+	width:100%;
+	height:100%;
+	position: absolute;
+	}
+	h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+	}
+	.container {
+    padding: 80px 120px;
+	}
+  
+	.navbar {margin-bottom:0px;}
+	.navbar-default .navbar-nav>li>a {padding-left:18px; padding-right:18px;}
+	.navbar-default {background-color:white}
+	.navbar-default .navbar-nav>.active>a {background-color:white}
+	.navbar-default .navbar-nav>.active>a:hover {background-color:white}
+	
+	.navbar-default .navbar-nav>.active>a, 
+	.navbar-default .navbar-nav>.active>a:focus, 
+	.navbar-default .navbar-nav>.active>a:hover {
+    padding-bottom: 4px;
+    border-bottom: solid 1px #000000;
+	background-color:white;
+	}
+	#myNavbar > ul > li.dropdown > a:hover {background-color:white}
+	
+	.carousel {width: 100%;
+    height: 100%;
+		}
+	
+	.carousel-inner { height:100%}
+	
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img {
+    width: 100%;
+	height:100%;
+    margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;    
+	}
+	
+	.carousel-inner > .active, {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: ;}
+	
+	.carousel-inner > .item {
+	display:  ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border:}
+ 
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  
+  .carousel-indicators {
+  background-color: #333333;
+  border-color: #333333}
+  
+  .btn-info {
+  border-color: #333333}
+  
+  
+  @media (max-width: 600px) {
+    .carousel-caption {
+     display: ; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: red;
+    color: red;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: red;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: red;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .modal-body p {font-size:20px}
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: red; 
+  }
+  
+	@media screen and (min-width: 768px){
+	.carousel-indicators {
+    bottom: 10px;
+	}
+	}
+  
+  /******** tentativa de manter sempre o colapse
+	@media (min-width: 768px)
+	{
+    .navbar-header
+    {
+        float: none;
+    }
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+    .navbar-collapse.collapse
+    {
+        display: none !important;
+    }
+	
+
+}
+  ********/
+  
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- INICIO DA NAVEGAÇÃO 	
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <!--   <a class="navbar-brand" href="#">Logo</a>  
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	    <li class="active" style="background-color:white"><a href="#">Início</a></li>
+		<li class="dropdown"> <!-- #Exposições com menu dropdown 
+          <a class="dropdown-toggle" data-toggle="dropdown" href="exposicoes.html">Exposições
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-left">
+             <li><a href="#clarice">Clarice Lispector</a></li>
+             <li><a href="#cante">Cante Alentejano</a></li>
+             <li><a href="#drummond">Drummond de Andrade</a></li>
+			 <li><a href="#pessoa">Fernando Pessoa</a></li>
+             <li><a href="#herberto">Herberto Helder</a></li>
+			 <li><a href="#mario">Mário Viegas</a></li>
+             <li><a href="#mono">Monossílabos</a></li>
+			 <li><a href="#nheengatu">Nheengatu</a></li>
+             <li><a href="#animais">Os Sons dos Animais</a></li>
+          </ul>
+        </li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="http://www.loja.museudafala.com/">Loja</a></li>
+		<li><a href="cafei.html">Café</a></li>
+      </ul>
+	  
+    </div>
+  </div>
+  </nav>	-->
+
+<div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+	  <div class="item active">
+        <img src="imagens/slide01.jpg" alt="New York" style="width:" >
+        <div class="carousel-caption">
+          <h1>CANTE ALENTEJANO</h1>
+          <h2>Fala cantando</h2>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="imagens/pauta.jpg" alt="Chicago" >
+        <div class="carousel-caption">
+          <h3>Como é o Cante?</h3>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal_1">Informação</button>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="imagens/question.png" alt="Los Angeles">
+        <div class="carousel-caption">
+          <h3>De onde veio?</h3>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal_2">Informação</button>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Modal 1-->
+  <div class="modal fade" id="myModal_1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">O Cante</h4>
+        </div>
+        <div class="modal-body">
+          <p>O Cante Alentejano é usualmente definido pela estrutura melódica e o tipo 
+		  de organização performativa que o caracteriza, ou seja, o canto polifónico 
+		  executado em grupo e sem instrumentos. Divididos entre o Ponto, o Alto e as 
+		  Segundas Vozes, um grupo de cante alentejano tem como repertório as "modas" 
+		  que versam, entre outros temas, sobre o trabalho, o amor, a contemplação e 
+		  a nostalgia. Outras caraterísticas que o distinguem são: a lentidão, 
+		  a moderação das acentuações, os melismas e certas anomalias harmónicas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fecha</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 2-->
+  <div class="modal fade" id="myModal_2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Origens</h4>
+        </div>
+        <div class="modal-body">
+          <p>As origens do Cante perdem-se no tempo. No entanto, existem três teorias principais:</p>
+		  <p>Para descobrir siga para o próximo slide ></p>
+		</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fecha</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+</body>
+</html>

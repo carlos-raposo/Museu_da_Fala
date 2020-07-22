@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cante Alentejano</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<script>$(document).ready(function() {      
+   $('.carousel').carousel('pause');
+});</script>
+	
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+
+<script>
+$(function(){
+
+$('#trigger').click(function(){
+  $('#myModal').modal('show');
+  return false;
+})
+
+});
+</script>
+
+<script>
+function checkOrientation() {
+    var winWidth = $(window).width();
+    var winHeight = $(window).height();
+
+    if (winHeight > winWidth) {
+        $('body').width(winHeight).height(winWidth); // swap the width and height of BODY if necessary
+    }
+}
+
+checkOrientation(); // Check orientation on page load
+
+// Check orientation on page resize (mainly for demo as it's unlikely a tablet's window size will change)
+var resizeEnd;
+$(window).resize(function(){ 
+   clearTimeout(resizeEnd);
+   resizeEnd = setTimeout(checkOrientation, 100);
+});
+
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ExhibitionEvent",
+  "location": "Museu da Fala",
+  "url": "http://museudafala.com/cante_alentejano/index.html",
+  "name": "Cante Alentejano",
+  "startDate": "2014-06-13",
+  "endDate": "2020-01-31",
+  "description": "O Cante Alentejano é usualmente definido pela estrutura melódica e o tipo de organização performativa que o caracteriza, ou seja, o canto polifónico executado em grupo e sem instrumentos. Conheça um pouco mais sobre este património mundial ",
+  "isAccessibleForFree": "True",
+  "image": "http://museudafala.com/image4/alentejanos.png",
+  "performer": "Povo Alentejano",
+   "offers": [
+           {"@type": "Offer",
+           "@id": "http://museudafala.com/cante_alentejano/index.html",
+           "url": "http://museudafala.com/cante_alentejano/index.html"
+       }
+  ]
+}
+</script>
+
+
+	<style>
+	
+	/* unvisited link */
+	
+	a {color:transparent; text-decoration:none; opacity:0}
+	
+a:link {
+    color: transparent; ; text-decoration:none
+}
+
+/* visited link */
+a:visited {
+    color: white; ; text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+    color: black; ; text-decoration:none; opacity:1; transition: all 0.35s ease;
+}
+
+/* selected link */
+a:active {
+    color: white; ; text-decoration:none
+}
+		
+.carousel-indicators li {
+	width:20px;
+	height:20px ;
+	border-color:red;} 
+		
+		
+
+img.slide {margin-left:%; width:100%; height:100%; padding-top:40px}
+		
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media screen and (orientation:portrait) {
+    body {
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+}
+
+@media all and (max-width: 1200px) { 
+img.slide {margin-left:%; width:100%; height:100%; padding-top:40px}
+}
+@media all and (max-width: 660px) { 
+img.slide {margin-left:%; width:100%; height:100%; padding-top:40px}     
+}
+@media all and (max-width: 615px) { 
+img.slide {margin-left:%; width:100%; height:100%; padding-top:40px}   
+}
+@media all and (max-width: 480px) { 
+img.slide {margin-left:%; width:100%; height:100%; padding-top:40px}	
+}
+@media all and (max-width: 360px) { 
+img.slide {width:100%; height:50%; padding-top:80px}	
+}		
+		
+	
+
+	</style>
+
+</head>
+
+<body>
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Instruções de navegação</h4>
+            </div>
+            <div class="modal-body">
+             
+				<p>Utilize as setas para avançar ou recuar</p>
+				<p>Aproxime o rato da margem inferior para vizualizar informação</p>
+				<p>Utilize os círculos para escolher um painel</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html" style="color:white; opacity:1">Receção</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" style="opacity:1">
+                    <li>
+                        <a href="http://www.museudafala.com/exposicoes.html" style="color:white; opacity:1">Exposições</a>
+                    </li>
+                    <li>
+                        <a href="http://www.museudafala.com/cafei.html" style="color:white; opacity:1">Café-i</a>
+                    </li>
+					<li>
+                        <a href="#" style="color:white; opacity:1" id="trigger">Ajuda</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+			
+			
+			
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" style="opacity:0.8; size:200%; z-index:99999">
+            <li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="1"></li>
+            <li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="2"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="3"></li>
+            <li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="4"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="5"></li>
+            <li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="6"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="7"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="8"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="9"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="10"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="11"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="12"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="13"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="14"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="15"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="16"></li>
+			<li style="width:20px; height:20px" data-target="#myCarousel" data-slide-to="17"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill">
+				<img src="imagens/slide01.jpg" class="slide" alt="alentejanos no mundo" title="o cantar da planície"></img>
+				</div>
+                <a style=" opacity:1"><div class="carousel-caption">
+                    <h1 style="font-size:8vh; color:black; ">O CANTE ALENTEJANO<br><br><br></h1>
+					<h2 style="font-size:7.5vh; color:black">Fala cantando<br><br><br><br><br><br></h2>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:">
+				<img src="imagens/pauta.png" class="slide" alt="pauta musical" title="moda alentejana"></img>
+				</div>
+                <a style="opacity:1"><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h1>DEFINIÇÕES</h1>
+					<h2 style="font-size:3.2vh; text-align:justify">O Cante Alentejano é usualmente definido pela estrutura melódica e o tipo de organização performativa que o caracteriza, ou seja, 
+					o canto polifónico executado em grupo e sem instrumentos. Divididos entre o Ponto, o Alto e as Segundas Vozes, um grupo de cante alentejano 
+					tem como repertório as "modas" que versam, entre outros temas, sobre o trabalho, o amor, a contemplação e a nostalgia. 
+					Outras caraterísticas que o distinguem são: a lentidão, a moderação das acentuações, os melismas e certas anomalias harmónicas.<br><br></h2>				
+
+                </div></a>
+            </div>
+			
+			<div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill"> 
+					<iframe style="border:none; width:100%; height:100%;background-image:url('')" 
+					src="https://www.youtube.com/embed/GBhgE3EMQy4"> 
+					</iframe></div>
+                <a><div class="carousel-caption" style="background-color:black">
+                    <h2>A Taberna</h2>
+					<h2 style="font-size:2.5vh">Templo do Cante</p>
+                </div></a>
+            </div>			
+            <div class="item">
+                <!-- Set the fifth background image using inline CSS below. -->
+                <div class="fill" style="background-image:">
+				<img src="imagens/question.png" style="margin-left:20%;width:60%; padding-top:70px" alt="ponto de interrogação" title="mistério do cante"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black">
+                    <h1>ORIGENS</h1>
+					<h2 style="font-size:3.2vh">As origens do Cante perdem-se no tempo. No entanto, existem três teorias principais:</h2>				
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the sixth background image using inline CSS below. -->
+                <div class="fill" style="background-image:">
+				<img src="imagens/gregoriano.jpg" style="margin-left:16%;width:68%; padding-top:40px" alt="monges gregorianos" title="influência cristã"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black">
+                    <h2>A prática coralista gregoriana</h2>					
+					<p style="font-size:2.8vh">CORO MEDIEVAL, 1479. Xilogravura 'Der Spiegel des Menschlichen lebens,' Augsburg, Alemanha, 1479.<br><br></p>					
+                </div></a>
+            </div>
+            <div class="item">
+                <!-- Set the seventh background image using inline CSS below. -->
+                <div class="fill">
+				<img class="slide" src="imagens/mouros.jpg" style="" alt="músicos muçulmanos" title="tempo para a música"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black;padding:2%;">
+                    <h2>Influência Muçulmana</h2>
+					<p style="font-size:3.0vh">O legado cultural da presença muçulmana em Portugal</p>
+					<p style="font-size:2.5vh">Manuscritos Magrebinos / A História de bayad e Ryad / 
+					Bayad canta com alaúde diante da amada e dos seus servos 
+					/ Séc. 13 / 17.5 × 19.2 cm / Biblioteca Apostólica do Vaticano<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the eight background image using inline CSS below. -->
+                <div class="fill" style="">
+				<img src="imagens/dolmen.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px" alt="dolmen" title="resistente"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>Autoctone</h2>
+					<p style="font-size:3.0vh">Originalmente portuguesa e alentejana. Anterior à ocupação romana e muçulmana.<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the ninth background image using inline CSS below. -->
+                <div class="fill" style="">
+				<img src="imagens/ceifa.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px" alt="fotografia antiga de trabalhadores no campo" title="o trabalho da ceifa"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>O Ritmo</h2>
+					<p style="font-size:2.9vh; text-align:justify">O cante alentejano era uma manifestação informal, espontânea que 
+					acontecia no campo. Marca um movimento lento, o ritmo, a cadência do 
+					trabalho à jorna, nomeadamente das colheitas que mais caracterizavam a 
+					agricultura alentejana - a ceifa, a monda e a apanha de azeitona.<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the tenth background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('imagens/apanha.jpg');">
+				<img src="imagens/apanha.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px" alt="fotografia antiga da apanha da azeitona" title="a apanha da azeitona"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>Estímulo</h2>
+					<p style="font-size:2.9vh; text-align:justify">Com o cante estimulava-se a competição entre trabalhadores, o 
+					cante colectivo projectado em uníssono dava o mote para homens, mulheres 
+					e crianças darem o seu melhor nas tarefas agrícolas. Entretanto, com o 
+					advento das empreitadas agrícolas, alteram-se os ritmos de trabalho e 
+					o estimulo do cante deixou de ter a importância que tinha nas tarefas do campo.<br><br></p>
+
+
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the eleven background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('imagens/alentejanos.jpg');">
+				<img src="imagens/alentejanos.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px" alt="grupo de homens" title="unidos no cante"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black">
+                    <h2>Coletivo Masculino<br><br></h2>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the twelve background image using inline CSS below. -->
+                <div class="fill" style="background-color:black">
+				<img src="imagens/alentejanas.jpg" style="margin-left:5%;width:90%; height:100%; padding-top:40px" alt="grupo de mulheres" title="unidas no cante"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black">
+                 <h2>Coletivo Feminino<br><br></h2>  
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the thirteenth background image using inline CSS below. -->
+                <div class="fill" style="background-image:">
+				<img src="imagens/anedota.jpg" style="margin-left:5%;width:90%; height:100%; padding-top:40px"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black">
+                    <h2>ANEDOTAS<br><br></h2>
+					<p style="font-size:3.2vh">Os alentejanos são os escolhidos para as melhores anedotas.<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the fourteentn background image using inline CSS below. -->
+                <div class="fill" style="background-image:">
+				<img src="imagens/slide04.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black">
+                 <h2>EXEMPLARES<br><br></h2>   
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the fifteenth background image using inline CSS below. -->
+                <div class="fill" style="background-image:">
+				<img src="imagens/ceifeiras.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>As Mulheres</h2>
+					<p style="font-size:2.9vh; text-align:justify">Na sua origem o cante alentejano era prática não só dos homens como das 
+					mulheres, ambos trabalhavam no campo, ambos protagonizavam essa prática cultural. 
+					Com o declínio da economia tradicional agrícola, com a passagem do cante do campo 
+					para as tabernas e, a partir dos anos 30, quando se constituem os primeiros grupos 
+					corais formais, silenciam-se as mulheres que até então desempenhavam um papel tão 
+					importante como os homens no cante alentejano.<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the sixteenth background image using inline CSS below. -->
+                <div class="fill" style="background-image:;">
+				<img src="imagens/slide07.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>As Mulheres</h2>
+					<p style="font-size:2.9vh; text-align:justify">É vinculada a ideia de que o cante alentejano é uma prática masculina. 
+					Quando as mulheres deixam de ter acesso ao local onde, de modo privilegiado, 
+					o cante passa a acontecer – nas tabernas – estas ficam privadas do seu papel 
+					de intérpretes. Só depois de 1974, com a revolução de Abril, com os novos movimentos sociais e culturais, 
+					as mulheres voltaram a cantar organizando-se em grupos corais femininos ou mistos .<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the seventeenth background image using inline CSS below. -->
+                <div class="fill" style="">
+				<img src="imagens/letra1.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>OS TEMAS</h2>
+					<p style="font-size:3.0vh; text-align:justify">Na sua forma original, as modas tinham como temas principais O TRABALHO, 
+					A CONTEMPLAÇÃO, A NOSTALGIA, O AMOR e A VIDA. Mais do que reivindicar melhores 
+					formas de vida, o cante servia para se purgarem as dificuldades. Com o declínio 
+					da economia agrícola e depois da revolução de 1974, os grupos corais introduziram 
+					nos seus reportórios novos temas, alguns inspirados nos acontecimentos 
+					políticos da época, mais reivindicativos, não deixando, porém, de cantar as antigas modas do cancioneiro popular.<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the eighteenth background image using inline CSS below. -->
+			<div class="fill" style="background-image:">
+			<img src="imagens/grupo1.jpg" style="margin-left:%;width:100%; height:100%; padding-top:40px"></img>
+			</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>A DIÁSPORA</h2>
+					<p style="font-size:2.5vh; text-align:justify">De salientar a existência de vários grupos corais na cintura de Lisboa, situação que advém da diáspora, 
+					os alentejanos que saem dos seus locais de residência e partem à procura de novas oportunidades junto da capital, 
+					o cante viaja do campo para a urbe, do meio agrícola para o meio industrial.Numa versão preliminar do 
+					"Inventário-catálogo dos grupos de cante alentejano", um documento de trabalho redigido por Paulo Lima, em 2012, 
+					para a proposta de candidatura do Cante Alentejano à lista representativa do património cultural da humanidade a 
+					apresentar à UNESCO, são enumerados 250 grupos corais, destes 140 encontram-se, actualmente, em actividade e 30 
+					pertencem à diáspora. No mesmo documento realça-se o aumento do número de grupos 
+					corais após 1974, grupos estes associados às Unidades Colectivas de Produção e às Autarquias Locais<br><br></p>
+                </div></a>
+            </div>
+			<div class="item">
+                <!-- Set the nineteenth background image using inline CSS below. -->
+                <div class="fill" style="background-color:black">
+				<img src="imagens/cartaz1.jpg" style="margin-left:4%; margin-right:2%; width:45%; height:100%; padding-top:40px"></img>
+				<img src="imagens/cartaz2.jpg" style="margin-left:%;width:45%; height:100%; padding-top:40px"></img>
+				</div>
+                <a><div class="carousel-caption" style="background-color:black; padding:2%;">
+                    <h2>CRÉDITOS</h2>
+					<p style="font-size:2.5vh; text-align:left">Texto Adaptado de: Sousa, Filomena (2011), "O Cante Alentejano e os Ceifeiros de Cuba", Projecto 
+					Memóriamedia, Porto: Memória Imaterial/IELT, artigo revisto, 2ª edição, pp. 1-12.<br>
+					Programação: Carlos Raposo<br><br></p>
+                </div></a>
+            </div>
+			
+			
+			
+			
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+	
+	
+
+  
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+	
+	<!--Google Analytics Control -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58595099-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>

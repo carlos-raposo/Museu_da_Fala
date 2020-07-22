@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Carlos Raposo">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>O Cante Alentejano</title>
+
+    <!-- Bootstrap core CSS -->
+	<link href="bootstrap.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<!-- CSS para quiz -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+	
+	body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.bd-placeholder-img {      
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+		}
+	  
+		
+	.navbar {padding-right: 43px;}
+	.navbar-toggler {padding: 0.25rem 0rem;}
+
+	li.nav-item {
+		padding-left: 18px;
+		padding-right: 18px;
+		font-size: 16px;
+		line-height: 20px;	
+		padding-top: px;}
+		
+	.cabecalho {
+		padding: 80px 0px 0px 0px;
+		margin-bottom: 0px;
+		background-color: #e9ecef;
+		border-radius: 0.3rem;
+		}
+		
+	.navbar .navbar-toggler:hover {border-color:#ffffff; outline-style:none }
+	.navbar .navbar-toggler:focus {border-color:#ffffff; outline-style:none}
+
+
+	*, *::before, *::after {box-sizing: initial;}
+	
+	*, *::before, *::after {box-sizing: initial;}
+	
+
+	
+	.carousel-caption {position:relative; left:0px; width: 70%; margin: 0 auto; color: black}
+	
+	.dropdown-item {width:unset}
+	
+	main {margin-top: 50px;}
+	h4.modal-header {text-align:center}
+	h4.modal-title {text-align:center}
+	footer a{color:#dc3545}
+	
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* ----------------------MEDIA QUERIES----------------------------
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+/* --------------------------------------------------------- */
+/* ---------Smartphones (portrait and landscape) ----------- */
+/* --------------------------------------------------------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){	
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.modal-body p {font-size:14px}
+.carousel-caption h1 {font-size:22px}
+}
+
+/* ------------------------------------------------ */
+/* -------------Smartphones (landscape) ----------- */
+/* ------------------------------------------------ */
+@media only screen
+and (min-width : 321px) {
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+footer p{display: none}
+hr {opacity:0}
+.carousel-caption h1 {font-size:22px}
+.hidefirst {display:none}
+}
+
+
+/* ---------------------------------- */
+/* Smartphones (portrait) ----------- */
+/* ---------------------------------- */
+
+@media only screen
+and (max-width : 320px){
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.col-md-3{width: 100%; flex: 0 0 100%; max-width: 100%;}
+.hide1 {display: none}
+footer p{display: block; font-size:10px; line-height:5px}
+hr {opacity:0.5}
+.carousel-caption h1 {font-size:19px}
+.hidefirst {display:block}
+}
+
+
+/* ------------------------------------------------- */
+/* ------------- Samsung Galaxy S5 ----landscape---- */
+/* ------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : landscape) 
+and (-webkit-device-pixel-ratio: 3)	{
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+footer p{display: none}
+.modal-body p {font-size:14px}
+.hidefirst {display:none}
+}
+
+/* --------------------------------------------------- */
+/* -------------- Samsung Galaxy S5 -----portrait--- - */
+/* --------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : portrait) 
+and (-webkit-device-pixel-ratio: 3){
+footer p{width:100%; font-size:10px; line-height: 5px}
+.col-md-3{width: 100%; flex: 0 0 100%; max-width: 100%;}
+footer p{display: block;}
+.hide1 {display: none}
+hr {opacity:0.5}
+
+}	
+
+/* ---------------------------------------------- */ 
+/* ------ iPads (portrait and landscape) -------- */
+/* ---------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+footer p{width:100%; font-size:10px; line-height: 5px}
+.col-md-3{width: 20%; flex: 0 0 20%; max-width: 20%;}
+.carousel-caption h1 {font-size:24px}
+.hidefirst {display:none}
+}
+
+/* ------------------------------------------- */ 
+/* ------------iPads (landscape) ------------- */
+/* ------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+footer p{display: none; width:90%; font-size:10px; line-height: 5px}
+.col-md-3{width: 20%; flex: 0 0 20%; max-width: 20%;}
+.hidefirst {display:none}
+}
+
+/* ------------------------------------------- */ 
+/* ----------- iPads (portrait) -------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+footer p{display: block; width:100%; font-size:10px; line-height: 5px}
+.col-md-3{width: 20%; flex: 0 0 20%; max-width: 20%;}
+.hidefirst {display:none}
+}
+
+/* ------------------------------------------- */ 
+/* ---------- Desktops and laptops ----------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1224px){
+.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 30px;}
+.row {flex-wrap: initial;}
+footer p{display: block; line-height: 10px}
+footer {width:82%;}
+.hidefirst {display:none}
+}
+
+
+/* ------------------------------------------- */
+/* -------------Large screens ---------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1824px){
+.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 30px;}
+.container{max-width:1200px}
+img.d-block w-100 {width:1200px; height:700px}
+.row {flex-wrap: initial;}	 
+footer p{line-height: 10px}
+footer {width:82%;}
+hr {opacity:0.5}
+.hidefirst {display:none}
+}
+
+	  
+    </style>
+    <!-- Custom styles for this template -->
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">	
+	<button class="navbar-toggler  ml-auto" style="border-style:none;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../inicio/index.html">Início<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposições</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="../lispector/index.html">Clarice Lispector</a>
+          <a class="dropdown-item active" href="../cante_alentejano/index.html">Cante Alentejano</a>
+          <a class="dropdown-item" href="../drummond/index.html">Drummond de Andrade</a>
+		  <a class="dropdown-item" href="../fernandopessoa/index.html">Fernando Pessoa</a>
+          <a class="dropdown-item" href="../herbertohelder/index.html">Herberto Helder</a>
+          <a class="dropdown-item" href="../marioviegas/index.html">Mário Viegas</a>
+		  <a class="dropdown-item" href="../monossilabico/index.html">Monossílabos</a>
+          <a class="dropdown-item" href="../nheengatu/index.html">Nheengatu</a>
+          <a class="dropdown-item" href="../sonsanimais/index.html">Os Sons dos Animais</a>       
+	   </div>
+	  </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
+		<div class="dropdown-menu" aria-labelledby="dropdown01">
+			<a class="dropdown-item" href="../../recursos/cronologia/index.html">Cronologia</a>
+			<a class="dropdown-item" href="../../recursos/guia_museus_virtuais.pdf">81 Museus Virtuais</a>
+		</div>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../cafei/index.html">Café</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <div class="container">
+
+
+		<div class="grid">
+        <div id="quiz">
+            <h1>Teste o seu conhecimento</h1>
+            <hr style="margin-bottom: 20px">
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+            <div>
+                <p id="progress">Questão x de y</p>
+            </div>
+        </div>
+    </div>
+ 
+ 
+<script src="question.js"></script>
+
+        
+  
+ 
+
+  </div> <!-- /container -->
+
+</main>
+		<!---------------------------------------------------->	
+		<div id="footer wrap" style="width:100%; position: absolute; bottom:0px">
+		<hr>
+		<!---------------- Início do Rodapé ------------------>
+		<footer class="row" style=" margin:0 auto;font-size: 14px;">
+				<div class="col-md-3">
+					<p style="font-weight:bold">Contactos</p>
+					<p>Geral: museudafala@gmail.com</p>
+				</div>
+				<div class="col-md-3 hide1">
+					<p>Design e Programação de CWD</p>
+					<p><a href="http://www.museudafala.com/mapadosite.html">Mapa do site</a></p>
+
+				</div>
+				<div class="col-md-3 hide1">
+					<p style="font-weight:bold">Apoios</p>
+					<p>Universidade Nova de Lisboa</p>
+					<p>Câmara Municipalde Lisboa</p>
+				
+				</div>
+				<div class="col-md-3 hide1">
+					<p><a href="#">Acessibilidade</a></p>
+					<p><a href="termoslegais.html">Termos legais</a></p>
+					<p>©2020 Museu da Fala </p>
+				</div>
+		</footer>
+		</div>
+		<!--------------------------------------------->
+
+
+<script>
+jQuery(function ($) {
+    $('.carousel').carousel();
+    var caption = $('div.item:nth-child(1) .carousel-caption');
+    $('.new-caption-area').html(caption.html());
+    caption.css('display', 'none');
+
+    $(".carousel").on('slide.bs.carousel', function (evt) {
+        var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+        $('.new-caption-area').html(caption.html());
+        caption.css('display', 'none');
+    });
+});
+</script>		
+		<!------------- /Fim do Rodapé ---------------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="bootstrap.bundle.js"></script></body>
+</html>

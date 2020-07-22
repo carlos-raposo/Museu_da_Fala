@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Os Sons dos Animais</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.css" rel="stylesheet">
+<link href="bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+    <script>
+	
+	// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var horse=createsoundbite("sons/horse.wav")
+var cow=createsoundbite("sons/cow.wav")
+var sheep=createsoundbite("sons/sheep.wav")
+var lion=createsoundbite("sons/lion.wav")
+var dog=createsoundbite("sons/dog.wav")
+var cat=createsoundbite("sons/cat.wav")
+var elephant=createsoundbite("sons/elephant.wav")
+var pig=createsoundbite("sons/pig.wav")
+var rooster=createsoundbite("sons/rooster.wav")
+var frog=createsoundbite("sons/frog.wav")
+var chimp=createsoundbite("sons/chimp.wav")
+var duck=createsoundbite("sons/duck.wav")
+var donkey=createsoundbite("sons/donkey.wav")
+var bee=createsoundbite("sons/bee.wav")
+var turkey=createsoundbite("sons/turkey.wav")
+var mouse=createsoundbite("sons/mouse.wav")
+
+</script>
+	
+	
+	
+	<style>
+	
+		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.bd-placeholder-img {      
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+		}
+	  
+		
+		.navbar {padding-right: 15px; margin-bottom:0px}
+		.navbar-toggler {padding: 0.25rem 0rem;}
+
+		li.nav-item {
+		padding-left: 24px;
+		padding-right: 18px;
+		font-size: 16px;
+		line-height: 15px;	
+		padding-top: 2px;}
+		
+		.navbar-nav>li>a {
+		padding-top: 0px;
+		padding-bottom: 0px; 
+		}
+		
+		.cabecalho {
+		padding: 0px 0px 0px 0px;
+		margin-bottom: 0px;
+		background-color: #e9ecef;
+		border-radius: 0.3rem;
+		}
+		
+		.navbar .navbar-toggler:hover {border-color:#ffffff; outline-style:none }
+		.navbar .navbar-toggler:focus {border-color:#ffffff; outline-style:none}
+	
+		.container {width: 100%; max-width: 100%;}
+		
+		.portfolio-item h2{
+		font-family:'Roboto' sans-serif; font-weight:300
+		}
+		* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;		
+		box-sizing: border-box;
+		}
+		
+		figure.img1 {
+	width: 100%;
+	}
+
+a {text-decoration: none;}
+a:hover {color: rgba(0,153,51,1.0);
+		text-decoration: none;
+		}
+									
+.capa {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	border-radius: 5px;
+	}
+			
+.portfolio-item:hover .capa:hover {opacity:1;
+	filter:contrast(200%);}
+ 
+.img-responsive {border-radius: 5px;} 
+.text {
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	}
+
+	
+		figure h3 {font-family:'Roboto' sans-serif; font-weight:100; color:white}
+	.multicolortext {
+        background-image: linear-gradient(to right, pink, navy, yellow, yellow, indigo, green, magenta, yellow, cyan, blue, cyan, orange, yellow);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+	  
+	  footer a{color:#dc3545}	
+		
+	<!-- for access skip to main-->	
+	
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* ----------------------MEDIA QUERIES----------------------------
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+/* --------------------------------------------------------- */
+/* ---------Smartphones (portrait and landscape) ----------- */
+/* --------------------------------------------------------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){	
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.text {font-size:30px}
+}
+
+/* ------------------------------------------------ */
+/* -------------Smartphones (landscape) ----------- */
+/* ------------------------------------------------ */
+@media only screen
+and (min-width : 321px) {
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.text {font-size:30px}
+}
+
+
+/* ---------------------------------- */
+/* Smartphones (portrait) ----------- */
+/* ---------------------------------- */
+
+@media only screen
+and (max-width : 320px){
+.cabecalho h2 {font-size:30px; text-align:center; padding-top:px; padding-bottom: 18px;}
+.text {font-size:30px}
+}
+
+
+/* ------------------------------------------------- */
+/* ------------- Samsung Galaxy S5 ----landscape---- */
+/* ------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : landscape) 
+and (-webkit-device-pixel-ratio: 3)	{
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.text {font-size:32px}
+}
+
+/* --------------------------------------------------- */
+/* -------------- Samsung Galaxy S5 -----portrait--- - */
+/* --------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : portrait) 
+and (-webkit-device-pixel-ratio: 3){
+.text {font-size:32px}
+
+}	
+
+/* ---------------------------------------------- */ 
+/* ------ iPads (portrait and landscape) -------- */
+/* ---------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+
+}
+
+/* ------------------------------------------- */ 
+/* ------------iPads (landscape) ------------- */
+/* ------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+
+}
+
+/* ------------------------------------------- */ 
+/* ----------- iPads (portrait) -------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+}
+
+/* ------------------------------------------- */ 
+/* ---------- Desktops and laptops ----------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1224px){
+.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 30px;}
+}
+
+
+/* ------------------------------------------- */
+/* -------------Large screens ---------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1824px){
+.cabecalho h2 {font-size:72px; text-align:center; padding-top:8px; padding-bottom: 30px;}		
+#page-content-wrapper2 {width:100%;}
+div.row1{margin:0px auto 0px auto;}
+div.row {width:70%}
+#page-content-wrapper2 p {font-size:22px}
+p a.btn.btn-default {font-size:18px;}
+#exposicoes {padding-top:80px; padding-bottom:80px;}
+#exposicoes h1{
+	font-size:270px; letter-spacing:20px;}
+a.btn, a.btn-default, a.btn2 {
+    color: #888;
+    float: right;
+    font-size: 18px;
+	margin-right:70px;
+}
+.btn, .btn-default, btn2 {
+	font-size: 18px;
+    border: 4px solid #888;
+    padding: 12px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: right;
+}
+h2.artigo { font-size: 72px;  padding-bottom:20px}
+.text {font-size:42px}
+}
+
+
+	  
+    </style>
+    <!-- Custom styles for this template -->
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">	
+	<button class="navbar-toggler  ml-auto" style="border-style:none;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="../../inicio/index.html">Início<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposições</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="../lispector/index.html">Clarice Lispector</a>
+          <a class="dropdown-item" href="../cante_alentejano/index.html">Cante Alentejano</a>
+          <a class="dropdown-item" href="../drummond/index.html">Drummond de Andrade</a>
+		  <a class="dropdown-item" href="../fernandopessoa/index.html">Fernando Pessoa</a>
+          <a class="dropdown-item" href="../herbertohelder/index.html">Herberto Helder</a>
+          <a class="dropdown-item" href="../marioviegas/index.html">Mário Viegas</a>
+		  <a class="dropdown-item" href="../monossilabico/index.html">Monossílabos</a>
+          <a class="dropdown-item" href="../nheengatu/index.html">Nheengatu</a>
+          <a class="dropdown-item active" href="../sonsanimais/index.html">Os Sons dos Animais</a>
+        </div>
+	  </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
+		<div class="dropdown-menu" aria-labelledby="dropdown01">
+			<a class="dropdown-item" href="../../recursos/cronologia/index.html">Cronologia</a>
+			<a class="dropdown-item" href="../../recursos/guia_museus_virtuais.pdf">81 Museus Virtuais</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../cafei/index.html">Café</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="cabecalho">
+    <div class="container text-align">
+	  <!--<img class="img-fluid mx-auto" style="display: block; width:620px; height:250px;" src="">  </img>-->
+      <h2 style="text-align:center; padding-bottom:16px; padding-top:8px">
+		<span style="color:#FF0000">O</span><span style="color:#3399ff">S&nbsp;</span>
+		<span style="color:#ff8c66">S</span><span style="color:#2eb82e">O</span><span style="color:#cc66ff">N</span><span style="color:#ff3300">S&nbsp;</span>
+		<span style="color:#4d4dff">D</span><span style="color:#ff884d">O</span><span style="color:#33cc33">S&nbsp;</span>
+		<span style="color:#FF0066">A</span><span style="color:#6699ff">N</span><span style="color:#FF0000">I</span><span style="color:#ffff00">M</span><span style="color:#FF9966">A</span><span style="color:#00ff99">I</span><span style="color:#FF0066">S</span></h2>
+    </div>
+  </div>
+
+  <div class="container">
+<!-------- 1ª PARTE -------->
+		
+							
+			
+				<!-- PAINEL DE EXPOSIÇÕES  -->
+				<!-- INICIA FILA 1 Projects Row -->
+				<div class="row row1">
+			
+					<!--  VACA  -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="cow.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:orange;"><div class="text">a vaca<br>MUGE</div> </div>
+								<img class="img-responsive" src="images/vaca.jpg" alt="alentejanos: peça em cerâmica" title="Fala Cantando!">	
+							</figure>
+						</a>
+					</div>
+				
+					<!-- CÃO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="dog.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:green;"><div class="text">o cão<br>LADRA</div> </div>
+								<img class="img-responsive" src="images/dog.jpg" alt="alentejanos: peça em cerâmica" title="Fala Cantando!">	
+							</figure>
+						</a>
+					</div>	
+				
+					<!-- GATO -->
+					<div class="col-md-3 portfolio-item"> 
+						<a onmousedown="cat.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:aqua;"><div class="text">o gato<br>MIA</div> </div>
+								<img class="img-responsive" src="images/gato.jpg" alt="Poesia ao Cubo Herberto Helder" title="à volta de Herberto">
+						</figure>
+						</a>
+					</div>
+				
+					<!-- CAVALO -->
+					<div class="col-md-3 portfolio-item">
+						 <a onmousedown="horse.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:red;"><div class="text">o cavalo<br>RELINCHA</div> </div>
+								<img class="img-responsive" src="images/cavalo.jpg" alt="Lispector" title="Clarice">
+							</figure>
+						</a>
+					</div>
+				</div>
+				<!-- / FILA -->
+
+				<!-- Inicia FILA 2 Projects Row -->
+				<div class="row" style="margin:0 auto;">
+				
+					<!-- OVELHA -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="sheep.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:#faff00"><div class="text">a ovelha<br>BALE</div> </div>
+								<img style="background-color:#faff00; padding:0px" class=" img-responsive" src="images/sheep.jpg" alt="Cubo Mário Viegas" title="Poesia ao Cubo Mário Viegas">
+							</figure>
+					</a>
+					</div>
+				
+					<!-- LEAO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="lion.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:#ff0000"><div class="text">o leão<br>RUGE</div> </div>
+								<img class="img-responsive" src="images/lion.jpg" alt="capa da edição de 1943" title="As palavras não se medem aos palmos!">	
+							</figure>
+						</a>
+					</div>
+				
+					<!-- ELEFANTE -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="elephant.playclip()">
+							<figure class="img1">
+							<div class="capa" style="background-color:#00a300"><div class="text">o elefante<br>BRAME</div> </div>
+							<img class="img-responsive" src="images/elephant.jpg" alt="Grupo de índigenas" title="A Fala Amazônica">
+							</figure>
+						</a>
+					</div> 
+				
+					<!-- PORCO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="pig.playclip()">
+							<figure class="img1">
+							<div class="capa" style="background-color:magenta"><div class="text">o porco<br>GRUNHE</div> </div>
+							<img class="img-responsive" src="images/pig.jpg" alt="cubo Fernando Pessoa" title="Poesia ao Cubo Fernando Pessoa">
+							</figure>
+						</a>
+					</div>
+				</div>
+				<!-- / FILA -->
+        
+				<!-- Inicia FILA 3 Projects Row -->
+				<div class="row" style="margin:0 auto;">
+			
+					<!-- GALO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="rooster.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:#1E75F9"><div class="text">o galo<br>CANTA</div> </div>
+								<img class="img-responsive" src="images/galo.jpg" alt="um barco no mar" title="Linha do Tempo">	
+							</figure>
+						</a>
+					</div>
+				
+					<!-- SAPO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="frog.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:#32CD32"><div class="text">o sapo<br>COACHA</div> </div>
+								<img class="img-responsive" src="images/sapo.jpg" alt="capa da edição de 1943" title="Sons Animais!">	
+							</figure>
+						</a>
+					</div>
+				
+					<!-- PATO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="duck.playclip()">
+							<figure class="img1">
+							<div class="capa" style="background-color:yellow"><div class="text">o pato<br>GRASNA</div> </div>
+							<img class=" img-responsive" src="images/pato.jpg" alt="capa do guia" title="Museologia na Web">
+							</figure>
+						</a>
+					</div>
+				
+					<!-- MACACO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="chimp.playclip()">
+							<figure class="img1">
+							<div class="capa" style="background-color:lime"><div class="text" style="color:white">o macaco<br>GUINCHA</div> </div>
+							<img class=" img-responsive" src="images/chimpanze.jpg" alt="café expresso" title="Café com 'i'">
+							</figure>
+						</a>
+					</div>
+				</div>
+								<!-- / FILA -->
+        
+				<!-- Inicia FILA 3 Projects Row -->
+				<div class="row" style="margin:0 auto;">
+			
+					<!-- BURRO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="donkey.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:#FF8C00"><div class="text">o burro<br>ZURRA</div> </div>
+								<img class="img-responsive" src="images/burro.jpg" alt="um barco no mar" title="Linha do Tempo">	
+							</figure>
+						</a>
+					</div>
+				
+					<!-- ABELHA -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="bee.playclip()">
+							<figure class="img1">
+								<div class="capa" style="background-color:#1E90FF"><div class="text">a abelha<br>ZUNE</div> </div>
+								<img class="img-responsive" src="images/abelha.jpg" alt="capa da edição de 1943" title="Sons Animais!">	
+							</figure>
+						</a>
+					</div>
+				
+					<!-- PERU -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="turkey.playclip()">
+							<figure class="img1">
+							<div class="capa" style="background-color:#FF1493"><div class="text">o peru<br>GRUGULEJA</div> </div>
+							<img class=" img-responsive" src="images/peru.jpg" alt="capa do guia" title="Museologia na Web">
+							</figure>
+						</a>
+					</div>
+				
+					<!-- RATO -->
+					<div class="col-md-3 portfolio-item">
+						<a onmousedown="mouse.playclip()">
+							<figure class="img1">
+							<div class="capa" style="background-color:#D2691E"><div class="text" style="color:white">o rato<br>CHIA</div> </div>
+							<img class=" img-responsive" src="images/rato.jpg" alt="café expresso" title="Café com 'i'">
+							</figure>
+						</a>
+					</div>
+				</div>
+  </div> <!-- /container -->
+
+</main>
+<hr>
+		<!---------------------------------------------------->	
+		<!---------------- Início do Rodapé ------------------>
+		<footer class="row" style="width:82%; margin:0 auto;font-size: 14px;">
+				<div class="col-md-3">
+					<p style="font-weight:bold">Contactos</p>
+					<p>Geral: museudafala@gmail.com</p>
+				</div>
+				<div class="col-md-3">
+					<p>Design e Programação de CWD</p>
+					<p><a href="http://www.museudafala.com/mapadosite.html">Mapa do site</a></p>
+
+				</div>
+				<div class="col-md-3">
+					<p style="font-weight:bold">Apoios</p>
+					<p>Universidade Nova de Lisboa</p>
+					<p>Câmara Municipalde Lisboa</p>
+				
+				</div>
+				<div class="col-md-3">
+					<p><a href="#">Acessibilidade</a></p>
+					<p><a href="termoslegais.html">Termos legais</a></p>
+					<p>©2020 Museu da Fala </p>
+				</div>
+		</footer>
+		<!--------------------------------------------->	
+		<!------------- /Fim do Rodapé ---------------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="bootstrap.bundle.js"></script></body>
+</html>

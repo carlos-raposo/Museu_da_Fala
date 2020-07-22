@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Nheengatu</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+    <style>
+		
+
+		
+		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.bd-placeholder-img {      
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+		}
+	  
+		
+		.navbar {padding-right: 43px;}
+		.navbar-toggler {padding: 0.25rem 0rem;}
+
+		li.nav-item {
+		padding-left: 18px;
+		padding-right: 18px;
+		font-size: 16px;
+		line-height: 20px;	
+		padding-top: px;}
+		
+		.cabecalho {
+		padding: 80px 0px 0px 0px;
+		margin-bottom: 0px;
+		background-color: #e9ecef;
+		border-radius: 0.3rem;
+		}
+		
+		.navbar .navbar-toggler:hover {border-color:#ffffff; outline-style:none }
+		.navbar .navbar-toggler:focus {border-color:#ffffff; outline-style:none}
+
+		/* Make the image fully responsive */
+		.carousel-inner img {
+			width: 100%;
+			height: 100%;
+			margin:0px auto;
+		}
+		
+		.carousel-inner{
+		width:80%;
+		margin:0px auto;
+		}
+
+		.carousel-control-prev-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+		}
+
+		.carousel-control-next-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+		}
+		
+		
+		div.carousel-item.active .carousel-caption {
+		opacity: 1;
+		}
+		
+		div.carousel-item.active .carousel-caption:hover {
+		opacity: 0;
+		}
+		
+		div.carousel-item.active .carousel-caption:focus {
+		opacity: 0;
+		}
+
+		div.carousel-item .carousel-caption {
+		opacity: 0;
+		transition: opacity .5s ease-in-out;
+		-moz-transition: opacity 5s ease-in-out;
+		-webkit-transition: opacity 5s ease-in-out;
+		}
+		.carousel-caption {font-family: 'Lato', sans-serif; font-weight:300}
+		
+		footer a{color:#dc3545}	
+	
+	
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* ----------------------MEDIA QUERIES----------------------------
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+/* --------------------------------------------------------- */
+/* ---------Smartphones (portrait and landscape) ----------- */
+/* --------------------------------------------------------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){	
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px; position:initial}
+iframe {height:200px; width:100%; text-align:center; position:initial}
+footer.row {display:none}
+div.col-md-3 {width:50%; padding-left:10px; padding-right:5px}
+
+}
+
+/* ------------------------------------------------ */
+/* -------------Smartphones (landscape) ----------- */
+/* ------------------------------------------------ */
+@media only screen
+and (min-width : 321px) {
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px; position:absolute}
+.carousel-control-prev, .carousel-control-next {
+    position: fixed;
+    margin-bottom: 0px;}
+footer.row {display:none}
+div.col-md-3 {width:50%; padding-left:10px; padding-right:5px}
+}
+
+
+/* ---------------------------------- */
+/* Smartphones (portrait) ----------- */
+/* ---------------------------------- */
+
+@media only screen
+and (max-width : 320px){
+.cabecalho h2 {font-size:30px; text-align:center; padding-top:px; padding-bottom: 18px;}
+.carousel-control-prev, .carousel-control-next {
+    position: fixed;
+    margin-bottom: 150px;}
+iframe {height:224px; width:100%; text-align:center; position:initial}
+footer.row {display:none}
+div.col-md-3 {width:100%; padding-left:10px; padding-right:5px}
+footer {display:none}
+}
+
+
+/* ------------------------------------------------- */
+/* ------------- Samsung Galaxy S5 ----landscape---- */
+/* ------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : landscape) 
+and (-webkit-device-pixel-ratio: 3)	{
+.cabecalho h2 {font-size:30px; text-align:center; padding-bottom: 18px;}
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px; position:absolute}
+iframe { height:224px; bottom: 0px; line-height: 0.7;}
+div.col-md-3 {width:50%; padding-left:10px; padding-right:5px}
+footer.row {display:none}
+}
+
+/* --------------------------------------------------- */
+/* -------------- Samsung Galaxy S5 -----portrait--- - */
+/* --------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : portrait) 
+and (-webkit-device-pixel-ratio: 3){
+.carousel-control-prev, .carousel-control-next {
+    position: fixed;
+    margin-bottom: 150px;}
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px; position:initial}
+iframe {height:224px; text-align:center; position:initial}
+div.col-md-3 {width:100%; padding-left:10px; padding-right:5px}
+
+}	
+
+/* ---------------------------------------------- */ 
+/* ------ iPads (portrait and landscape) -------- */
+/* ---------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px}
+iframe {height:380px; width:100%; text-align:center;}
+div.col-md-3 {width:100%; padding-left:10px; padding-right:5px}
+footer.row {display: flex; width:100%; position:absolute; bottom:0px; font-size: 12px; line-height: 10px}
+}
+
+/* ------------------------------------------- */ 
+/* ------------iPads (landscape) ------------- */
+/* ------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px}
+footer.row {display: flex; width:100%; position:absolute; bottom:0px; font-size: 12px; line-height: 10px}
+}
+
+/* ------------------------------------------- */ 
+/* ----------- iPads (portrait) -------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px}
+footer.row {display: flex; width:100%; position:absolute; bottom:0px; font-size: 12px; line-height: 10px}
+
+}
+
+/* ------------------------------------------- */ 
+/* ---------- Desktops and laptops ----------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1224px){
+.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 30px;}
+.carousel-caption {font-size:12px; text-align:left; padding-left:5px; padding-right:5px}
+iframe {width:100%; height:630px; text-align:center}
+footer.row {width:82%}
+}
+
+
+/* ------------------------------------------- */
+/* -------------Large screens ---------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1824px){
+.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 30px;}	
+.carousel-caption {font-size:20px; text-align:left; padding-left:20px; padding-right:15px; line-height: 1.4; margin-bottom: 30px; padding-top: 15px; padding-bottom: 0px; }
+iframe {width:100%; height:630px; text-align:center}
+footer.row {width:82%}
+}
+	  
+    </style>
+    <!-- Custom styles for this template -->
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">	
+	<button class="navbar-toggler  ml-auto" style="border-style:none;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../inicio/index.html">Início<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposições</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="../lispector/index.html">Clarice Lispector</a>
+          <a class="dropdown-item" href="../cante_alentejano/index.html">Cante Alentejano</a>
+          <a class="dropdown-item" href="../drummond/index.html">Drummond de Andrade</a>
+		  <a class="dropdown-item" href="../fernandopessoa/index.html">Fernando Pessoa</a>
+          <a class="dropdown-item" href="../herbertohelder/index.html">Herberto Helder</a>
+          <a class="dropdown-item" href="../marioviegas/index.html">Mário Viegas</a>
+		  <a class="dropdown-item" href="../monossilabico/index.html">Monossílabos</a>
+          <a class="dropdown-item active" href="../nheengatu/index.html">Nheengatu</a>
+          <a class="dropdown-item" href="../sonsanimais/index.html">Os Sons dos Animais</a>
+        </div>
+	  </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
+		<div class="dropdown-menu" aria-labelledby="dropdown01">
+			<a class="dropdown-item" href="../../recursos/cronologia/index.html">Cronologia</a>
+			<a class="dropdown-item" href="../../recursos/guia_museus_virtuais.pdf">81 Museus Virtuais</a>
+		</div>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../cafei/index.html">Café</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action 
+  <div class="cabecalho">
+    <div class="container text-align">
+      <h2>Nheengatu</h2>
+    </div>
+  </div>   -->
+
+  <div class="container2" style="padding-top:65px">
+    <!-- Example row of columns -->
+	<div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+	<li data-target="#demo" data-slide-to="6"></li>
+	<li data-target="#demo" data-slide-to="7"></li>
+    <li data-target="#demo" data-slide-to="8"></li>
+    <li data-target="#demo" data-slide-to="9"></li>
+	<li data-target="#demo" data-slide-to="10"></li>
+	<li data-target="#demo" data-slide-to="11"></li>
+	<li data-target="#demo" data-slide-to="12"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+	<div class="carousel-item active">
+      <img src="cartaz3.png" alt="Floresta Amazonica">
+    </div>
+    <div class="carousel-item">
+      <img src="image1.jpg" alt="Floresta Amazonica">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+        <p>Em sua forma original, o tupi, que até meados do século XVII foi o idioma mais usado no território brasileiro, não existe mais. Mas há uma variante moderna, o Nheengatu (<em>fala boa</em>, em tupi), que continua na boca de cerca de 30 000 índios e caboclos no Amazonas.<br/><br/> Sem falar da grande influência que teve no desenvolvimento do português e da cultura do Brasil, Todo dia, sem perceber, você fala algumas das 10 000 palavras que o tupi nos legou. Do nome de animais, como <em>jacaré</em> e <em>jaguar</em>, a termos cotidianos como <em>cutucão</em>, <em>mingau</em> e <em>pipoca</em>.</p>
+        <p>Rio Amazonas</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image2.jpg" alt="Aldeia indígena">
+	  <div class="carousel-caption">
+        <img src="palavras.png">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image3.png" alt="Silhuetas">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+        <p>Quando no início do século XVI os portugueses chegaram ao Brasil existiam centenas de línguas indígenas. Para quem queria mandar e confessar, tal abundância de línguas, era um problema.
+		Ainda em 1639, o jesuíta espanhol Cristóval de Acuña, que acompanhou a expedição de Pedro Teixeira em percurso idêntico ao realizado cem anos antes por Orellana, identificava – graças aos intérpretes – apenas nas margens do grande rio e nas bocas de seus principais afluentes, povos que "passam de 150, todos de línguas diferentes".  O papel dos intérpretes foi de extrema importância. "O entender o capitão [Orellana] a sua língua [dos Omagua] foi, depois de Deus, o que nos ajudou a não ficarmos no rio. Porque se os não entendesse, nem os índios ficariam em paz conosco, nem teríamos acertado com estas povoações"</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="mapalinguas2.png" alt="Linguas Indigenas">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+        <p>Em 1968 foram registradas 1,492 línguas faladas na América do Sul, distribuídos segundo os seguintes troncos linguísticos: 130 línguasTupi, 108 Karib, 83 Aruak, 34 Pano, 26 Tukano, 66 Gê e mais 271 línguas isoladas ou não classificadas.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="onca.jpg" alt="Onça">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>As línguas indígenas eram consideradas toscas e inferiores e a enorme diversidade era atacada como sendo obra do demônio para dificultar a pregação do evangelho.</p>
+		<p>Segundo o próprio Padre Antônio Vieira essas línguas não podiam ser compreendidas, porque as suas pronúncias "eram tão diferentes que as sílabas, as vogais, as consoantes e até mesmo as palavras não podiam ser distinguidas na confusão de sons"(Vieira Apud Sweet, 1974, p. 105).</p>
+		<p>Na prática não era viável para um missionário encarregue de uma aldeia de repartição aprender todas as línguas aí faladas. Era necessário obter esta "obediência" por outros meios.</p>
+		<p>Durante o primeiro século de colonização recorreu-se a um grande número de intérpretes,  o que não se mostrou ser uma solução para os problemas de comunicação.</p>
+        <p>O projeto de uma língua franca para o Brasil  pouco a pouco tomou forma.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="vieira.jpg" alt="António Vieira">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>Desconsideradas as diferenças dialetais existia uma língua  falada pelos Tupinambás desde o litoral paulista até ao litoral norte da Foz do Rio Amazonas.
+       A Coroa Portuguesa incumbiu os Jesuítas para a "aperfeiçoar" e divulgar.</p>
+        <p>É uma variedade desta "Língua Geral", trabalhada pelos jesuítas e usada nos seus seminários,  que foi introduzida na Amazônia e que se veio a designar por Nheengatu, "Fala Boa" em Tupi. </p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="livros.jpg" alt="António Vieira">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>Até 1727  a Coroa Portuguesa encorajou o projeto da Língua Geral como instrumento de comunicação. Os Jesuítas foram incumbidos de construir uma gramática e de instruir os índios apenas nesta língua.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="gravura7.jpg" alt="nativos e soldados">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>Ao longo do século XVII até cerca de metade do século XVIII milhares de índios foram obrigados a abandonar as suas terras e a trocar as suas línguas maternas pela Língua Geral.</p>
+        <p>Muitos povos que antes habitavam as áreas de mais fácil acesso haviam sido exterminados completamente e, com eles, suas línguas; outros, num processo acelerado de destribalização, estavam estocados nas aldeias domésticas e haviam abandonado suas línguas maternas pela Língua Geral; e finalmente, a fuga desordenada de outros grupos para as cabeceiras dos rios deixaram despovoados extensos territórios.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="rugendas.jpg" alt="nativos e soldados">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>A língua portuguesa chegou a estar quase banida. Em Belém e São Luiz todos falavam a tal Língua Geral, sem excetuar as famílias dos colonos e as pessoas gradas. Os jesuítas a usavam até nos sermões e prédicas.</p>
+        <p>Marquês de Pombal, superministro do rei de Portugal, não conseguia comunicar-se com a maioria de seus funcionários da década de 1750. O novo governador, que não falava a Língua Geral, ficou horrorizado porque bastava deixar o palácio do governo em Belém para encontrar dificuldade em se fazer entender. Ele mesmo conta que, uma vez, apresentado aos filhos de um dos principais lusos da colônia, homem de posses, descobriu que as crianças falavam fluentemente a Língua Geral e apenas entendiam, muito pouco, a língua portuguesa.</p>
+        <p>Por outro lado, com a chegada à Amazônia de mão-de-obra africana e de populações vindas do litoral brasileiro e de Portugal,  os índios deixam de ser a única força de trabalho disponível.</p> 
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="marques.jpg" alt="nativos e soldados">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>No reinado de D. José I, sob orientação do seu Primeiro-ministro, futuro Marquês de Pombal, os jesuítas são expulsos e inicia-se a portugalização do território.</p>
+        <p>O projeto de uma língua franca de origem indígena foi abandonado. O Nheengatu é reprimido e os índios chegam a ter de trabalhar 10 anos para receber em troca uma educação em português.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="indiosmodernos.jpg" alt="indios modernos">
+	  <div class="carousel-caption" style="background-color:rgba(136, 136, 136, 0.9);">
+		<p>No entanto, as marcas da Língua Geral deixadas durante um século e meio não se apagariam de um dia para o outro nem por meio de decretos.</p>
+		<p>Esta língua sobreviveu e ainda no século XIX era, na prática, a língua franca da imensa região Amazônica.</p>
+		<p>O Nheengatu continua sendo falado hoje por uma população cabocla e indígena situada entre a cidade de Manaus e as malocas do alto Rio Negro, numa área aproximadamente de 300.000 km2 e é, sobretudo, um elo de solidariedade inter-étnica.</p> 
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="image1.jpg" alt="indios modernos">
+	  <div class="carousel-caption" style=" opacity: 1;">
+		<iframe src="https://www.youtube.com/embed/X3cp_sLC9HQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>		
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+	
+	
+	
+  </div> <!-- /container -->
+
+</main>
+
+		<!---------------------------------------------------->	
+		<!---------------- Início do Rodapé ------------------>
+		<footer class="row" style=" margin:0 auto;">
+		<hr style="width:100%">
+				<div class="col-md-3">
+					<p style="font-weight:bold">Contactos</p>
+					<p>Geral: museudafala@gmail.com</p>
+				</div>
+				<div class="col-md-3">
+					<p>Design e Programação de CWD</p>
+					<p><a href="http://www.museudafala.com/mapadosite.html">Mapa do site</a></p>
+
+				</div>
+				<div class="col-md-3">
+					<p style="font-weight:bold">Apoios</p>
+					<p>Universidade Nova de Lisboa</p>
+					<p>Câmara Municipalde Lisboa</p>
+				
+				</div>
+				<div class="col-md-3">
+					<p><a href="#">Acessibilidade</a></p>
+					<p><a href="termoslegais.html">Termos legais</a></p>
+					<p>©2020 Museu da Fala </p>
+				</div>
+		</footer>
+		<!--------------------------------------------->	
+		<!------------- /Fim do Rodapé ---------------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="bootstrap.bundle.js"></script></body>
+</html>
