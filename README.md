@@ -6,4 +6,4 @@
 
 [Acesse o site no github](https://carlos-raposo.github.io/Museu_da_Fala/inicio/index.html)
 
-![logo](imagens/logo_300.png)
+![logo](logo_fala.png)
