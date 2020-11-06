@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Página dedicada à Literatura de Cordel">
+    <meta name="Keywords" content="Língua Portuguesa, Cordel, Literatura de Cordel, Autores Brasileiros"/>
+	<meta name="author" content="Carlos Raposo">
+	<!--<meta name="google-site-verification" content="NX_2e1dVINbLvD2hzRVYA_0_cfXFQWC8Pi1ku7Nb000" /> --> 
+    <title>Cordel no Museu da Fala</title>
+	
+	<!-- Google Analytics 
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-58595099-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->		
+
+    <!-- Bootstrap core CSS -->
+	<link href="bootstrap.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+    <style>
+	
+		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.bd-placeholder-img {      
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+		}
+	  
+		.navbar {padding-right: 43px;}
+
+		.navbar-toggler {
+			padding: 0.25rem 0rem;}
+
+		li.nav-item {
+			padding-left: 18px;
+			padding-right: 18px;
+			font-size: 16px;
+			line-height: 20px;	
+		padding-top: px;
+		}
+		
+		.cabecalho {
+			padding: 80px 0px 0px 0px;
+			margin-bottom: 0px;
+			background-color: #e9ecef;
+			border-radius: 0.3rem;
+		}
+		
+		footer a{color:#dc3545}	
+      }
+	  
+	  	
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* ----------------------MEDIA QUERIES----------------------------
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+/* --------------------------------------------------------- */
+/* ---------Smartphones (portrait and landscape) ----------- */
+/* --------------------------------------------------------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+	li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+	.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}	
+	.cabecalho h2 {font-size:24px; text-align:center; padding-top:6px; padding-bottom: 4px;}
+	iframe {width:300px; height:340px}
+	footer.row p{ font-size:12px; line-height:3px; padding-left:10px}
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}
+
+/* ------------------------------------------------ */
+/* -------------Smartphones (landscape) ----------- */
+/* ------------------------------------------------ */
+@media only screen
+and (min-width : 321px) {
+li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
+.cabecalho h2 {font-size:20px; text-align:center; padding-top:6px; padding-bottom: 1px;}
+iframe {width:300px; height:340px}
+footer.row p{ font-size:12px; line-height:2px}
+footer.row .col-md-3 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;}
+.card {	padding-left:3em;
+			padding-right:3em;
+	}	
+}
+
+
+/* ---------------------------------- */
+/* Smartphones (portrait) ----------- */
+/* ---------------------------------- */
+
+@media only screen
+and (max-width : 320px){
+li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
+.cabecalho h2 {font-size:20px; text-align:center; padding-top:6px; padding-bottom: 4px;}
+iframe {width:300px; height:340px}
+footer.row p{ font-size:12px; line-height:2px}
+footer.row .col-md-3 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;}
+}
+
+
+/* ------------------------------------------------- */
+/* ------------- Samsung Galaxy S5 ----landscape---- */
+/* ------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : landscape) 
+and (-webkit-device-pixel-ratio: 3)	{
+	li.nav-item {
+		font-size: 23px;
+		line-height: 29px;}
+	.dropdown-item {
+		font-size: 22px;
+		line-height: 28px;}
+	.cabecalho h2 {font-size:22px; text-align:center; padding-top:8px; padding-bottom: 6px;}
+	iframe {width:340px; height:350px}
+	footer.row {width:80%; padding-left:20px}
+	footer.row p{ font-size:12px; line-height:2px}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;}
+		.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}
+
+/* --------------------------------------------------- */
+/* -------------- Samsung Galaxy S5 -----portrait--- - */
+/* --------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : portrait) 
+and (-webkit-device-pixel-ratio: 3){
+	li.nav-item {
+		font-size: 23px;
+		line-height: 29px;}
+	.dropdown-item {
+		font-size: 22px;
+		line-height: 28px;}
+	.cabecalho h2 {font-size:22px; text-align:center; padding-top:8px; padding-bottom: 6px;}
+	iframe {width:336px; height:350px}
+	footer.row {width:96%;}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;}
+	footer.row p{ font-size:12px; line-height:2px}
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}	
+
+/* ---------------------------------------------- */ 
+/* ------ iPads (portrait and landscape) -------- */
+/* ---------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+	li.nav-item {
+		font-size: 20px;
+		line-height: 20px;}
+	.dropdown-item {
+		font-size: 18px;
+		line-height: 28px;}
+	.cabecalho h2 {font-size:30px; text-align:center; padding-top:12px; padding-bottom: 8px;}
+	iframe {width:630px; height:350px}
+	footer.row {width:96%; padding-left:20px}
+	footer.row p{font-size: 12px; line-height:3px}
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}
+
+/* ------------------------------------------- */ 
+/* ------------iPads (landscape) ------------- */
+/* ------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+	img {width:600px}
+	footer.row {width:96%; padding-left:20px}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;}
+	footer.row {width:96%; padding-left:20px}
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}	
+
+}
+
+/* ------------------------------------------- */ 
+/* ----------- iPads (portrait) -------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+	img {width:600px}
+	footer.row {width:96%; padding-left:20px}
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}
+
+/* ------------------------------------------- */ 
+/* ---------- Desktops and laptops ----------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1224px){
+	li.nav-item {
+		font-size: 20px;
+		line-height: 20px;}
+	.dropdown-item {
+		font-size: 18px;
+		line-height: 28px;}	
+	img {width:600px}
+	.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 16px;}
+	iframe {width:600px; height:350px}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;}
+	footer.row {width:80%; padding-left:14px}
+	footer.row p{ line-height:8px}
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}
+
+
+/* ------------------------------------------- */
+/* -------------Large screens ---------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1824px){
+	img {width:640px}
+	.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 16px;}
+	footer.row {width:70%; padding-left:20px}
+	footer.row p{ line-height:8px}
+
+	.card {	padding-left:3em;
+			padding-right:3em;
+	}
+}
+
+
+
+
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+
+
+
+.card-block{
+	line-height: 0.8em;
+	border: none;
+	transition: all 0.2s ease-in-out !important;
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: none;
+		}
+	}
+	
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+#myBtnVoltar {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+#myBtnVoltar:hover {
+  background-color: #050;
+}
+	  	
+	  
+    </style>
+    <!-- Custom styles for this template -->
+   
+</head>
+<body>
+	<a href="index.html" target="_self"
+	id="myBtnVoltar" title="Voltar">Voltar</a>
+	<button onclick="topFunction()" id="myBtn" title="Voltar ao início da página">Topo</button>
+<!--
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">	
+	<button class="navbar-toggler ml-auto" style="border-style:none;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../index.html">Início<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposições</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item active" href="#">Cordel</a>
+          <a class="dropdown-item" href="../cante_alentejano/index.html">Cante Alentejano</a>
+          <a class="dropdown-item" href="../drummond/index.html">Drummond de Andrade</a>
+		  <a class="dropdown-item" href="../fernandopessoa/index.html">Fernando Pessoa</a>
+          <a class="dropdown-item" href="../herbertohelder/index.html">Herberto Helder</a>
+          <a class="dropdown-item" href="../marioviegas/index.html">Mário Viegas</a>
+		  <a class="dropdown-item" href="../monossilabico/index.html">Monossílabos</a>
+          <a class="dropdown-item" href="../nheengatu/index.html">Nheengatu</a>
+          <a class="dropdown-item" href="../sonsanimais/index.html">Os Sons dos Animais</a>
+        </div>
+	  </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
+		<div class="dropdown-menu" aria-labelledby="dropdown01">
+			<a class="dropdown-item" href="../../recursos/cronologia/index.html">Cronologia</a>
+			<a class="dropdown-item" href="../../recursos/guia/index.html">81 Museus Virtuais</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../loja.html" tabindex="-1" aria-disabled="true">Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../cafei/index.html">Café</a>
+      </li>
+    </ul>
+		</div>
+	</div>	
+</nav> -->
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <!--<div class="cabecalho" style="background-color:#fff">
+    <div class="container text-align">
+    </div>
+  </div> -->
+
+  <div class="container-fluid">
+  
+	<div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<img src="images/contra_o_machismo.jpg" style="width:100%"></img>		
+		  </div>
+	</div> 
+   
+    <div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">1</h4>
+			<p><b>O direito à informação</b>
+			<p>É de grande importância
+			<p>Pois é possibilidade
+			<p>De romper a ignorância
+			<p>Sendo sempre acessível
+			<p>Mostra a sua relevância.
+			<br><br>
+			<p><b>Toda mazela do mundo</b>
+			<p>Precisamos divulgar
+			<p>Debater e discutir
+			<p>Também exemplificar
+			<p>Pelo uso de pesquisas
+			<p>Feitas para demonstrar.
+			<br><br>
+			<p><b>É assim com o machismo</b>
+			<p>Grande mal desse país
+			<p>Que para ser combatido
+			<p>Ser cortado na raiz
+			<p>Só com muita informação
+			<p>E com forte diretriz.	
+		  </div>
+	
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">2</h4>
+			<p><b>É que a tal ignorância</b>
+			<p>Prejudica nossa luta
+			<p>Que travamos todo dia
+			<p>Com convicta conduta
+			<p>De acabar a violência
+			<p>Reduzindo essa labuta.
+			<br><br>
+			<p><b>Muita gente desconhece</b>
+			<p>O machismo matador
+			<p>Que agride, assassina
+			<p>Só gerando muita dor
+			<p>Abusando da mulher
+			<p>Sendo vil e opressor.
+			<br><br>
+			<p><b>Tem ainda quem duvida</b>
+			<p>E questiona a existência
+			<p>Não enxerga esse machismo
+			<p>Que não concede clemência
+			<p>E por ser desinformado
+			<p>Perde então a coerência.		
+		  </div>
+	</div> 
+	
+	<div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">3</h4>
+			<p><b>Mas eu posso explicar</b>
+			<p>A verdade disponível
+			<p>É possível comprovar
+			<p>Esse mal perceptível
+			<p>Até mesmo no papel
+			<p>Seu retrato é terrível.
+			<br><br>
+			<p><b>São pesquisas divulgadas</b>
+			<p>Revelando esse machismo
+			<p>Estatísticas gritantes
+			<p>Sem espaço pra achismo
+			<p>A verdade nua e crua
+			<p>Desse torpe canalhismo.
+			<br><br>
+			<p><b>Pode ser pelo IPEA</b>
+			<p>Pode ser do IBGE
+			<p>É preciso mais trabalho
+			<p>Seja o órgão que vier
+			<p>Sempre com informação
+			<p>Sobre a vida da mulher.
+		  </div>
+	
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">4</h4>
+			<p><b>Demandamos assistência</b>
+			<p>Nós queremos atenção
+			<p>Já que essa Lei vigente
+			<p>De Acesso à Informação
+			<p>É direito das mulheres
+			<p>Do governo, obrigação
+			<br><br>
+			<p><b>Pois sabendo desses dados</b>
+			<p>Desses fatos divulgados
+			<p>Nossos grupos militantes
+			<p>Por direito outorgados
+			<p>Se levantam incisivos
+			<p>E bastante instigados.
+			<br><br>
+			<p><b>A informação em mãos</b>
+			<p>É gravada pela mente
+			<p>Vira um argumento certo
+			<p>E um discurso veemente
+			<p>Encoraja o ativismo
+			<p>De maneira inteligente.		
+		  </div>
+	</div>
+	
+	<div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">5</h4>
+			<p><b>A partir do movimento</b>
+			<p>O discurso se espalha
+			<p>Atingindo muita gente
+			<p>A verdade que não falha
+			<p>Remexendo a estrutura		
+			<p>O machismo se chacoalha.
+			<br><br>
+			<p><b>As mulheres já não ficam</b>
+			<p>Fracas e silenciadas
+			<p>Pois com muita informação
+			<p>São também empoderadas
+			<p>Denunciam e protestam
+			<p>Sempre bem determinadas.
+			<br><br>
+			<p><b>O machismo é um problema</b>
+			<p>Que existe mui velado
+			<p>Pela falta de debates
+			<p>Está naturalizado
+			<p>Mas é pela informação
+			<p>Que será exterminado.	
+		  </div>
+
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">6</h4>
+			<p><b>As mulheres podem ver</b>
+			<p>Que possuem mais opção
+			<p>Não precisam mais viver
+			<p>Presas na submissão
+			<p>E se forem agredidas
+			<p>Já têm mais percepção.
+			<br><br>
+			<p><b>Já munidas de direitos</b>
+			<p>E sabendo aonde ir
+			<p>As mulheres denunciam
+			<p>Não precisam sucumbir
+			<p>Elas rompem o silêncio
+			<p>E já querem intervir.
+			<br><br>
+			<p><b>Mas pra ser realidade</b>
+			<p>Esse quadro otimista
+			<p>É preciso que o Estado
+			<p>Ofereça essa conquista
+			<p>Informando e educando
+			<p>De maneira realista.	
+		  </div>
+	</div>
+	
+	<div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">7</h4>
+			<p><b>O governo é responsável</b>
+			<p>Por tornar bem acessível
+			<p>Tudo sendo do contexto
+			<p>Do direito exequível
+			<p>E com firme compromisso
+			<p>Faz de tudo disponível.
+			<br><br>
+			<p><b>É com base nessa Lei</b>
+			<p>Na regulamentação
+			<p>Que o povo já possui
+			<p>O Acesso à Informação
+			<p>Um avanço positivo
+			<p>Para a politização.
+			<br><br>
+			<p><b>A informação certeira</b>
+			<p>Embasada na verdade
+			<p>Deve ser bem coletiva
+			<p>E responsabilidade
+			<p>Da escola e da mídia
+			<p>De toda a sociedade.		
+		  </div>
+	
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">8</h4>
+			<p><b>Aprendendo desde cedo</b>
+			<p>Ao machismo combater
+			<p>E sabendo certamente
+			<p>A quem pode recorrer
+			<p>Com muita cidadania
+			<p>Todos passam a viver.
+			<br><br>
+			<p><b>O machismo só existe</b>
+			<p>Se não há educação
+			<p>É na falta abrasiva
+			<p>Da melhor informação
+			<p>Pois só na ignorância
+			<p>Ele encontra vocação.
+			<br><br>
+			<p><b>Por isso faço um apelo</b>
+			<p>Para quem estiver lendo
+			<p>Não se cale nem permita
+			<p>Que isso continue sendo
+			<p>Um problema de silêncio
+			<p>Que o país vai corroendo.
+		
+		  </div>
+	</div>
+	
+	<div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">9</h4>
+			<p><b>Solte a voz para falar</b>
+			<p>Sem receio, seja forte
+			<p>Dissemine a informação
+			<p>Transformando essa sorte
+			<p>Das mulheres brasileiras
+			<p>Sejam do sul ou do norte.
+			<br><br>
+			<p><b>Conhecer com plenitude</b>
+			<p>É também direito humano
+			<p>Viver pela informação
+			<p>E sem sombra de engano
+			<p>É a força necessária
+			<p>Pra romper com o tirano.
+			<br><br>
+			<p><b>Para todas as mulheres</b>
+			<p>Precisamos informar
+			<p>Sobre essa ferramenta
+			<p>Feita pra denunciar
+			<p>E a base que sustenta
+			<p>Seu direito de lutar.
+		 </div>
+	
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">10</h4>
+			<p><b>Exigindo compromisso</b>
+			<p>Do Estado brasileiro
+			<p>Que nos deve efetivo
+			<p>Cumprimento por inteiro
+			<p>Dessa lei que deve ser
+			<p>Um direito corriqueiro.
+			<br><br>
+			<p><b>Pra mulher de todo jeito</b>
+			<p>Lei de Acesso à Informação
+			<p>Dando pra cada contexto
+			<p>A mais séria atenção
+			<p>Seja negra, índia ou branca
+			<p>Em política união.
+			<br><br>
+			<p><b>Educando e informando</b>
+			<p>Vamos sempre em união
+			<p>Com coragem e ousadia
+			<p>Fazendo a revolução
+			<p>Da mulher empoderada
+			<p>Filha da libertação.
+		</div>
+	</div>
+	
+	
+	
+	<div class="row flex-row justify-content-center">
+		 <div class="card card-block d-flex ">
+			<h4 style="text-align: center">nota</h4>
+			<p>Autor: Jarid Arraes</p>
+			<a href="#">link</a>
+				
+		  </div>
+	</div> 
+	
+</div>
+
+</main>
+<hr>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+		<!---------------------------------------------------->	
+		<!---------------- Início do Rodapé ------------------>
+		<footer class="row" style=" margin:0 auto;">
+				<div class="col-md-3">
+					<p style="font-weight:bold">Contactos</p>
+					<p>Geral: museudafala@gmail.com</p>
+				</div>
+				<div class="col-md-3">
+					<p>Design e Programação de CWD</p>
+					<p><a href="../../mapa.html">Mapa do site</a></p>
+
+				</div>
+				<div class="col-md-3">
+					<p style="font-weight:bold">Apoios</p>
+					<p>Universidade Nova de Lisboa</p>
+					<p>Câmara Municipalde Lisboa</p>
+				
+				</div>
+				<div class="col-md-3">
+					<p><a href="../../acessibilidade.html">Acessibilidade</a></p>
+					<p><a href="../../termoslegais.html">Termos legais</a></p>
+					<p>©2020 Museu da Fala </p>
+				</div>
+		</footer>
+		<!--------------------------------------------->	
+		<!------------- /Fim do Rodapé ---------------->
+		
+		
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="bootstrap.bundle.js"></script>
+	</body>
+ 
+</html>

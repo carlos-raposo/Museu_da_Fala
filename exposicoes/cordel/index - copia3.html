@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Página dedicada à Literatura de Cordel">
+    <meta name="Keywords" content="Língua Portuguesa, Cordel, Literatura de Cordel, Autores Brasileiros"/>
+	<meta name="author" content="Carlos Raposo">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+	<!--<meta name="google-site-verification" content="NX_2e1dVINbLvD2hzRVYA_0_cfXFQWC8Pi1ku7Nb000" /> --> 
+    <title>Cordel no Museu da Fala</title>
+	
+	<!-- Google Analytics 
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-58595099-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->		
+
+    <!-- Bootstrap core CSS -->
+	<link href="bootstrap.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+    <style>
+	
+		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.bd-placeholder-img {      
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+		}
+	  
+		.navbar {padding-right: 43px;}
+
+		.navbar-toggler {
+			padding: 0.25rem 0rem;}
+
+		li.nav-item {
+			padding-left: 18px;
+			padding-right: 18px;
+			font-size: 16px;
+			line-height: 20px;	
+		padding-top: px;
+		}
+		
+		.cabecalho {
+			padding: 80px 0px 0px 0px;
+			margin-bottom: 0px;
+			background-color: #e9ecef;
+			border-radius: 0.3rem;
+		}
+		
+		footer a{color:#dc3545}	
+      }
+	  
+	  	
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* ----------------------MEDIA QUERIES----------------------------
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+
+/* --------------------------------------------------------- */
+/* ---------Smartphones (portrait and landscape) ----------- */
+/* --------------------------------------------------------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+	li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+	.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}	
+	.cabecalho h2 {font-size:24px; text-align:center; padding-top:6px; padding-bottom: 4px;}
+	iframe {width:300px; height:340px}
+	footer.row p{ font-size:12px; line-height:3px; padding-left:10px}
+}
+
+/* ------------------------------------------------ */
+/* -------------Smartphones (landscape) ----------- */
+/* ------------------------------------------------ */
+@media only screen
+and (min-width : 321px) {
+li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
+.cabecalho h2 {font-size:20px; text-align:center; padding-top:6px; padding-bottom: 1px;}
+iframe {width:300px; height:340px}
+footer.row p{ font-size:12px; line-height:2px}
+footer.row .col-md-3 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;}
+}
+
+
+/* ---------------------------------- */
+/* Smartphones (portrait) ----------- */
+/* ---------------------------------- */
+
+@media only screen
+and (max-width : 320px){
+li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
+.cabecalho h2 {font-size:20px; text-align:center; padding-top:6px; padding-bottom: 4px;}
+iframe {width:300px; height:340px}
+footer.row p{ font-size:12px; line-height:2px}
+footer.row .col-md-3 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;}
+}
+
+
+/* ------------------------------------------------- */
+/* ------------- Samsung Galaxy S5 ----landscape---- */
+/* ------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : landscape) 
+and (-webkit-device-pixel-ratio: 3)	{
+	li.nav-item {
+		font-size: 23px;
+		line-height: 29px;}
+	.dropdown-item {
+		font-size: 22px;
+		line-height: 28px;}
+	.cabecalho h2 {font-size:22px; text-align:center; padding-top:8px; padding-bottom: 6px;}
+	iframe {width:340px; height:350px}
+	footer.row {width:80%; padding-left:20px}
+	footer.row p{ font-size:12px; line-height:2px}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;}
+}
+
+/* --------------------------------------------------- */
+/* -------------- Samsung Galaxy S5 -----portrait--- - */
+/* --------------------------------------------------- */
+@media only screen and (min-device-width: 360px) 
+and (max-device-height: 640px) and (orientation : portrait) 
+and (-webkit-device-pixel-ratio: 3){
+	li.nav-item {
+		font-size: 23px;
+		line-height: 29px;}
+	.dropdown-item {
+		font-size: 22px;
+		line-height: 28px;}
+	.cabecalho h2 {font-size:22px; text-align:center; padding-top:8px; padding-bottom: 6px;}
+	iframe {width:336px; height:350px}
+	footer.row {width:96%;}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;}
+	footer.row p{ font-size:12px; line-height:2px}
+}	
+
+/* ---------------------------------------------- */ 
+/* ------ iPads (portrait and landscape) -------- */
+/* ---------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px){
+	li.nav-item {
+		font-size: 20px;
+		line-height: 20px;}
+	.dropdown-item {
+		font-size: 18px;
+		line-height: 28px;}
+	.cabecalho h2 {font-size:30px; text-align:center; padding-top:12px; padding-bottom: 8px;}
+	iframe {width:630px; height:350px}
+	footer.row {width:96%; padding-left:20px}
+	footer.row p{font-size: 12px; line-height:3px}
+}
+
+/* ------------------------------------------- */ 
+/* ------------iPads (landscape) ------------- */
+/* ------------------------------------------- */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+	img {width:600px}
+	footer.row {width:96%; padding-left:20px}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;}
+	footer.row {width:96%; padding-left:20px}		
+
+}
+
+/* ------------------------------------------- */ 
+/* ----------- iPads (portrait) -------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+	img {width:600px}
+	footer.row {width:96%; padding-left:20px}
+}
+
+/* ------------------------------------------- */ 
+/* ---------- Desktops and laptops ----------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1224px){
+	li.nav-item {
+		font-size: 20px;
+		line-height: 20px;}
+	.dropdown-item {
+		font-size: 18px;
+		line-height: 28px;}	
+	img {width:600px}
+	.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 16px;}
+	iframe {width:600px; height:350px}
+	footer.row .col-md-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;}
+	footer.row {width:80%; padding-left:14px}
+	footer.row p{ line-height:8px}
+}
+
+
+/* ------------------------------------------- */
+/* -------------Large screens ---------------- */
+/* ------------------------------------------- */
+@media only screen
+and (min-width : 1824px){
+	img {width:640px}
+	.cabecalho h2 {font-size:45px; text-align:center; padding-top:8px; padding-bottom: 16px;}
+	footer.row {width:70%; padding-left:20px}
+	footer.row p{ line-height:8px}	
+}
+
+
+
+
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+
+
+
+.card-block{
+	border: none;
+	transition: all 0.2s ease-in-out !important;
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: none;
+	}
+}
+
+    </style>
+    <!-- Custom styles for this template -->
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">	
+	<button class="navbar-toggler ml-auto" style="border-style:none;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../../index.html">Início<span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposições</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item active" href="#">Cordel</a>
+          <a class="dropdown-item" href="../cante_alentejano/index.html">Cante Alentejano</a>
+          <a class="dropdown-item" href="../drummond/index.html">Drummond de Andrade</a>
+		  <a class="dropdown-item" href="../fernandopessoa/index.html">Fernando Pessoa</a>
+          <a class="dropdown-item" href="../herbertohelder/index.html">Herberto Helder</a>
+          <a class="dropdown-item" href="../marioviegas/index.html">Mário Viegas</a>
+		  <a class="dropdown-item" href="../monossilabico/index.html">Monossílabos</a>
+          <a class="dropdown-item" href="../nheengatu/index.html">Nheengatu</a>
+          <a class="dropdown-item" href="../sonsanimais/index.html">Os Sons dos Animais</a>
+        </div>
+	  </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
+		<div class="dropdown-menu" aria-labelledby="dropdown01">
+			<a class="dropdown-item" href="../../recursos/cronologia/index.html">Cronologia</a>
+			<a class="dropdown-item" href="../../recursos/guia/index.html">81 Museus Virtuais</a>
+	  </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../loja.html" tabindex="-1" aria-disabled="true">Loja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../cafei/index.html">Café</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="cabecalho">
+    <div class="container text-align">
+      <h1 style="margin-top: -17px; padding-bottom: 10px;font-family: 'Cabin Sketch', cursive; font-weight: 700; font-size: 4.5rem; text-align:center;">Literatura de Cordel</h1>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+   
+    <div class="scrolling-wrapper row flex-row mt-4 pb-4">
+			
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+			 
+				<div class="card card-block">
+				<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>
+				<img src="molas/mola1.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(90deg);"></img>
+				<a href="desencantado.html" target="_self">
+				<img src="images/desencantado.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+			  
+				<div class="card card-block">
+				<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>
+				<img src="molas/mola1.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; -ms-transform: rotate(20deg); /* IE 9 */</img>
+				transform: rotate(10deg);"></img>
+				<a href="discussao.html" target="_self">
+				<img src="images/discussao.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>			
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+			
+				<div class="card card-block">
+				<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>				
+				<img src="molas/mola1.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(130deg); -ms-transform: rotate(-3deg); /* IE 9 */
+				transform: rotate(-3deg);"></img>
+				<a href="agregado.html" target="_self">
+				<img src="images/patativa.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+							
+				<div class="card card-block">
+				
+				<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>				
+				<img src="molas/mola1.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(-100deg);  -ms-transform: rotate(4deg); /* IE 9 */
+				transform: rotate(4deg);"></img>
+				<a href="aisesesse.html" target="_self">
+				<img src="images/aisesesse.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+				<div class="card card-block">
+				<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>				
+				<img src="molas/mola1.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(200deg);  -ms-transform: rotate(-6deg); /* IE 9 */
+				transform: rotate(-6deg);"></img>
+				<a href="festa.html" target="_self">
+				<img src="images/festa.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+				<div class="card card-block">
+				<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>				
+				<img src="molas/mola2.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(deg);  -ms-transform: rotate(4deg); /* IE 9 */
+				transform: rotate(4deg);"></img>
+				<a href="corona.html" target="_self">
+				<img src="images/corona.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+				<div class="card card-block">
+<img src="molas/linha.png" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>					
+				<img src="molas/mola2.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(-59deg);  -ms-transform: rotate(-6deg); /* IE 9 */
+				transform: rotate(-6deg);"></img>
+				<a href="contra_o_machismo.html" target="_self">
+				<img src="images/contra_o_machismo.jpg" style="width:100%"></img>
+				</a>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+				
+				<div class="card card-block">
+				<img src="molas/linha.png" style="width: 166vh; height: 2px; margin-left: -15px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: ; filter:hue-rotate(deg);"></img>					
+				<img src="molas/mola1.png" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(-100deg);  -ms-transform: rotate(4deg); /* IE 9 */
+				transform: rotate(4deg);"></img>
+				<img src="images/cocoverde.jpg" style="width:100%"></img>
+				</div>
+			</div>
+	
+    </div>
+</div>
+
+</main>
+<hr>
+		<!---------------------------------------------------->	
+		<!---------------- Início do Rodapé ------------------>
+		<footer class="row" style=" margin:0 auto;">
+				<div class="col-md-3">
+					<p style="font-weight:bold">Contactos</p>
+					<p>Geral: museudafala@gmail.com</p>
+				</div>
+				<div class="col-md-3">
+					<p>Design e Programação de CWD</p>
+					<p><a href="../../mapa.html">Mapa do site</a></p>
+
+				</div>
+				<div class="col-md-3">
+					<p style="font-weight:bold">Apoios</p>
+					<p>Universidade Nova de Lisboa</p>
+					<p>Câmara Municipalde Lisboa</p>
+				
+				</div>
+				<div class="col-md-3">
+					<p><a href="../../acessibilidade.html">Acessibilidade</a></p>
+					<p><a href="../../termoslegais.html">Termos legais</a></p>
+					<p>©2020 Museu da Fala </p>
+				</div>
+		</footer>
+		
+		<!--------------------------------------------->	
+		<!------------- /Fim do Rodapé ---------------->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="bootstrap.bundle.js"></script>
+	</body>
+ 
+</html>

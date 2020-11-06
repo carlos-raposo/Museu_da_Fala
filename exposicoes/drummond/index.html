@@ -9,6 +9,19 @@
 	<meta name="google-site-verification" content="NX_2e1dVINbLvD2hzRVYA_0_cfXFQWC8Pi1ku7Nb000" />
     <title>No meio do caminho</title>
 
+	<!-- Google Analytics --> 
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-58595099-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Analytics -->	
+
     <!-- Bootstrap core CSS -->
 	<link href="bootstrap.css" rel="stylesheet">
 	
@@ -158,7 +171,13 @@ var pedratp=createsoundbite("sons/pedratp.wav", "sons/pedratp.mp3")
 /* --------------------------------------------------------- */
 @media only screen
 and (min-device-width : 320px)
-and (max-device-width : 480px){	
+and (max-device-width : 480px){
+	li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+	.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
 	.navbar {padding-right: 0px;}
 	.row {width:100%; margin:0 auto;}
 	figcaption h1 {font-size:20px}
@@ -197,6 +216,12 @@ and (max-width : 320px){
 @media only screen and (min-device-width: 360px) 
 and (max-device-height: 640px) and (orientation : landscape) 
 and (-webkit-device-pixel-ratio: 3)	{
+	li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+	.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
 	.row {width:100%; margin:0 auto;}
 	figcaption h1 {font-size:20px}
 	figcaption p{font-size:18px}
@@ -209,6 +234,12 @@ and (-webkit-device-pixel-ratio: 3)	{
 @media only screen and (min-device-width: 360px) 
 and (max-device-height: 640px) and (orientation : portrait) 
 and (-webkit-device-pixel-ratio: 3){
+	li.nav-item {
+			font-size: 23px;
+			line-height: 29px;}
+	.dropdown-item {
+			font-size: 22px;
+			line-height: 28px;}
 	.row {width:100%; margin:0 auto;}
 	figcaption h1 {font-size:20px}
 	figcaption p{font-size:18px}
@@ -222,6 +253,12 @@ and (-webkit-device-pixel-ratio: 3){
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px){
+	li.nav-item {
+		font-size: 20px;
+		line-height: 20px;}
+	.dropdown-item {
+		font-size: 18px;
+		line-height: 28px;}
 	.row {width:100%; margin:0 auto;}
 	figcaption h1 {font-size:16px}
 	figcaption p{font-size:13px}
@@ -257,6 +294,12 @@ and (orientation : portrait){
 /* ------------------------------------------- */
 @media only screen
 and (min-width : 1224px){
+	li.nav-item {
+		font-size: 20px;
+		line-height: 20px;}
+	.dropdown-item {
+		font-size: 18px;
+		line-height: 28px;}
 	.row {width:80%; margin:0 auto;}
 	figcaption h1 {font-size:18px}
 	figcaption p{font-size:14px}
@@ -312,7 +355,7 @@ and (min-width : 1824px){
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="../../inicio/index.html">Início<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../../index.html">Início<span class="sr-only">(current)</span></a>
       </li>
 	  <li class="nav-item dropdown"> 
         <a class="nav-link dropdown-toggle active" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Exposições</a>
@@ -332,13 +375,13 @@ and (min-width : 1824px){
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
 		<div class="dropdown-menu" aria-labelledby="dropdown01">
 			<a class="dropdown-item" href="../../recursos/cronologia/index.html">Cronologia</a>
-			<a class="dropdown-item" href="../../recursos/guia_museus_virtuais.pdf">81 Museus Virtuais</a>
+			<a class="dropdown-item" href="../../recursos/guia/index.html">81 Museus Virtuais</a>
 	  </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Loja</a>
+        <a class="nav-link" href="../../loja.html" tabindex="-1" aria-disabled="true">Loja</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Café</a>
+        <a class="nav-link" href="../../cafei/index.html">Café</a>
       </li>
     </ul>
   </div>
@@ -365,7 +408,7 @@ and (min-width : 1824px){
 				
 				<a onmousedown="pedrapt.playclip()" ondblclick="pedrapt.pause()">
 					<figure class="img1 overlay dark reveal-smooth square" style="background-color:olive;">
-						<img src="imagens3/pedra.png" class="img-responsive"  alt="havia uma pedra" title="No meio do caminho" >
+						<img src="imagens3/pedra.png" class="img-responsive"  alt="uma pedra" title="português" >
 							<figcaption style="background-color: olive;">
 								<h1>No meio do caminho</h1>
 								<p>No meio do caminho tinha uma pedra
@@ -389,7 +432,7 @@ and (min-width : 1824px){
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:brown">
 						<img src="imagens3/pedra.png" 
 						style="-ms-transform: rotate(33deg); /* IE 9 */ transform: rotate(33deg);" class="img-responsive" 
-						alt="a stone" title="In the middle of the road" >
+						alt="uma pedra" title="inglês" >
 					<figcaption style="background-color: brown">
 						 <h1>In the middle of the road</h1>
 						 <p>In the middle of the road was a stone
@@ -411,7 +454,7 @@ and (min-width : 1824px){
                 <a onmousedown="pedradn.playclip()" ondblclick="pedradn.pause()">
 				<figure class="img1 overlay dark reveal-smooth">
                     <figure class="img1 overlay dark reveal-smooth square" style="background-color:green">
-						<img src="imagens3/pedra.png" style="-ms-transform: rotate(66deg); /* IE 9 */ transform: rotate(66deg);"class="img-responsive"  alt="var en sten" title="I midten af vejen"  >
+						<img src="imagens3/pedra.png" style="-ms-transform: rotate(66deg); /* IE 9 */ transform: rotate(66deg);"class="img-responsive"  alt="uma pedra" title="dinamarquês"  >
 					<figcaption style="background-color: green">
 						<h1>I midten af vejen</h1>
 						<p>I midten af vejen var en sten var en sten i midten af vejen var en sten i midten af vejen var en sten. Jeg vil aldrig glemme denne begivenhed i livet af mine nethinder så træt. Jeg vil aldrig glemme, at i midten af vejen var en sten var en sten i midten af vejen i midten af vejen var en sten. [DA]</p>
@@ -422,7 +465,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="font-size:1.7em">
                 <a onmousedown="pedrafr.playclip()" ondblclick="pedrafr.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:blue">
-						<img src="imagens3/pedra.png" style="-ms-transform: rotate(99deg); /* IE 9 */ transform: rotate(99deg);"class="img-responsive" alt="avait une pierre" title="Au milieu du chemin"  >
+						<img src="imagens3/pedra.png" style="-ms-transform: rotate(99deg); /* IE 9 */ transform: rotate(99deg);"class="img-responsive" alt="uma pedra" title="francês"  >
 					<figcaption style="background-color: blue">
 						<h1>Au milieu du chemin</h1>
 						<p>Au milieu du chemin y avait une pierre
@@ -447,7 +490,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedrahe.playclip()" ondblclick="pedrahe.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:cyan">
-						<img src="imagens3/pedra.png" style="-ms-transform: rotate(132deg); /* IE 9 */ transform: rotate(132deg);" class="img-responsive" alt="uma pedra" title="Drummond de Andrade" >
+						<img src="imagens3/pedra.png" style="-ms-transform: rotate(132deg); /* IE 9 */ transform: rotate(132deg);" class="img-responsive" alt="uma pedra" title="hebraico" >
 					<figcaption style="background-color: cyan">
 						<h1>באמצע הכביש הייתה אבן</h1>
 						<p>באמצע הכביש היה אבן הייתה אבן באמצע הכביש הייתה אבן באמצע הכביש הייתה אבן. אני לעולם לא אשכח את האירוע הזה בחיים של רשתית כל כך העייף שלי. אני לעולם לא אשכח שבאמצע הכביש היה אבן הייתה אבן באמצע הכביש באמצע הכביש הייתה אבן. [HE]</p>
@@ -461,7 +504,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedrait.playclip()" ondblclick="pedrait.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:indigo">
-						<img src="imagens3/pedra.png" style="-ms-transform: rotate(165deg); /* IE 9 */ transform: rotate(165deg);" class="img-responsive" alt="c’era un sasso" title="Nel mezzo del cammino" >
+						<img src="imagens3/pedra.png" style="-ms-transform: rotate(165deg); /* IE 9 */ transform: rotate(165deg);" class="img-responsive" alt="uma pedra" title="italiano" >
 					<figcaption style="background-color: indigo">
 						 <h1>Nel mezzo del cammino</h1>
 						 <p>Nel mezzo del cammino c’era un sasso
@@ -482,7 +525,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedrahl.playclip()" ondblclick="pedrahl.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:gray">
-						<img src="imagens3/pedra.png" style="-ms-transform: rotate(198deg); /* IE 9 */ transform: rotate(198deg);" class="img-responsive" alt="was een steen" title="In het midden van de weg"  >
+						<img src="imagens3/pedra.png" style="-ms-transform: rotate(198deg); /* IE 9 */ transform: rotate(198deg);" class="img-responsive" alt="uma pedra" title="holandês"  >
 					<figcaption style="background-color: gray">
 						 <h1>In het midden van de weg</h1>
 						 <p>In het midden van de weg was een steen een steen 
@@ -500,7 +543,7 @@ and (min-width : 1824px){
              <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedrahg.playclip()" ondblclick="pedrahg.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:pink">
-                   <img src="imagens3/pedra.png" style="-ms-transform: rotate(231deg); /* IE 9 */ transform: rotate(231deg);" class="img-responsive" alt="tinha uma pedra" title="Az út közepén volt" >
+                   <img src="imagens3/pedra.png" style="-ms-transform: rotate(231deg); /* IE 9 */ transform: rotate(231deg);" class="img-responsive" alt="uma pedra" title="húngaro" >
 					<figcaption style="background-color: pink">
 						<h1>Az út közepén volt</h1>
 						<p>Az út közepén volt egy kő kő volt a az út közepén volt egy kő a 
@@ -520,7 +563,7 @@ and (min-width : 1824px){
              <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedradt.playclip()" ondblclick="pedradt.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:red">
-                   <img src="imagens3/pedra.png" style="-ms-transform: rotate(264deg); /* IE 9 */ transform: rotate(264deg);" class="img-responsive" alt="lag ein Stein" title="Mitten im Weg">
+                   <img src="imagens3/pedra.png" style="-ms-transform: rotate(264deg); /* IE 9 */ transform: rotate(264deg);" class="img-responsive" alt="uma pedra" title="alemão">
 					<figcaption style="background-color:red">
 						<h1>Mitten im Weg lag ein Stein</h1>
 						<p>Mitten im Weg lag ein Stein
@@ -541,7 +584,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedralt.playclip()" ondblclick="pedralt.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:chartreuse">
-						<img src="imagens3/pedra.png" style="-ms-transform: rotate(297deg); /* IE 9 */ transform: rotate(297deg);" class="img-responsive" >
+						<img src="imagens3/pedra.png" style="-ms-transform: rotate(297deg); /* IE 9 */ transform: rotate(297deg);" class="img-responsive" alt="uma pedra" title="latim">
 					<figcaption style="background-color:chartreuse">
 						  <h1>In media via</h1>
 						  <p>In media via lapis lapidem lapidem in media 
@@ -558,7 +601,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedraes.playclip()" ondblclick="pedraes.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:turquoise ">
-						 <img src="imagens3/pedra.png" style="-ms-transform: rotate(330deg); /* IE 9 */ transform: rotate(330deg);" class="img-responsive" >
+						 <img src="imagens3/pedra.png" style="-ms-transform: rotate(330deg); /* IE 9 */ transform: rotate(330deg);" class="img-responsive" alt="uma pedra" title="espanhol">
 					<figcaption style="background-color:turquoise ">
 						<h1>En medio del camino</h1>
 						<p>En medio del camino había una piedra,
@@ -579,7 +622,7 @@ and (min-width : 1824px){
             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
                 <a onmousedown="pedratp.playclip()" ondblclick="pedratp.pause()">
 				<figure class="img1 overlay dark reveal-smooth square" style="background-color:olive ">
-					<img src="imagens3/pedra.png" style="-ms-transform: rotate(360deg); /* IE 9 */ transform: rotate(360deg);" class="img-responsive">
+					<img src="imagens3/pedra.png" style="-ms-transform: rotate(360deg); /* IE 9 */ transform: rotate(360deg);" class="img-responsive" alt="uma pedra" title="tupi">
 					<figcaption style="background-color:olive ">
 						<h1>Pytéripé pé i tyb'amé</h1>
 						<p>Pytéripé pé i tyb'amé oîepé itá
@@ -614,7 +657,7 @@ and (min-width : 1824px){
 				</div>
 				<div class="col-md-3">
 					<p>Design e Programação de CWD</p>
-					<p><a href="http://www.museudafala.com/mapadosite.html">Mapa do site</a></p>
+					<p><a href="../../mapa.html">Mapa do site</a></p>
 
 				</div>
 				<div class="col-md-3">
@@ -624,8 +667,8 @@ and (min-width : 1824px){
 				
 				</div>
 				<div class="col-md-3">
-					<p><a href="#">Acessibilidade</a></p>
-					<p><a href="termoslegais.html">Termos legais</a></p>
+					<p><a href="../../acessibilidade.html">Acessibilidade</a></p>
+					<p><a href="../../termoslegais.html">Termos legais</a></p>
 					<p>©2020 Museu da Fala </p>
 				</div>
 		</footer>
@@ -636,17 +679,6 @@ and (min-width : 1824px){
 		window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
 		</script>
 		<script src="bootstrap.bundle.js"></script>
-		<!--Google Analytics Control --> 
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-58595099-1', 'auto');
-	ga('send', 'pageview');
-
-	</script>
 
  </body>
 </html>
