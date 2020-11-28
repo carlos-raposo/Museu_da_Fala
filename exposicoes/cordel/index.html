@@ -31,6 +31,22 @@
     <style>
 	
 		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		/* ------ accessibility area G1 link skip to main ------- */
+		.skip-link {
+		  background: #319795;
+		  color: #fff;
+		  font-weight: 700;
+		  left: 50%;
+		  padding: 4px;
+		  position: absolute;
+		  transform: translateY(-100%);
+		  transition: transform 0.3s;
+		}
+
+		.skip-link:focus {
+		  transform: translateY(0%);
+		}
+		/*------------------- end accessibility area --------------------*/
 		.bd-placeholder-img {      
         text-anchor: middle;
         -webkit-user-select: none;
@@ -273,7 +289,7 @@ and (min-width : 1824px){
 	&:hover{
 		transform: translateY(-5px);
 		box-shadow: none;
-	}
+	}	
 }
 
     </style>
@@ -281,6 +297,11 @@ and (min-width : 1824px){
     
 </head>
 <body>
+	<!-- accessibility G1 link skip to main  -->
+	<a class="skip-link" href="#principal">
+	Skip to content
+	</a>
+
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">	
 	<button class="navbar-toggler ml-auto" style="border-style:none;" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -354,11 +375,12 @@ and (min-width : 1824px){
 				<img src="molas/linha.png" alt="linha ou cordel" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>
 				<img src="molas/mola1.png" alt="mola que prende o folheto ao cordel" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; -ms-transform: rotate(20deg); /* IE 9 */</img>
 				transform: rotate(10deg);"></img>
-				<a href="discussao.html" target="_self" 
+				<a href="discussao.html" target="_self">
+				<img src="images/discussao.jpg" style="width:100%"
 				alt="Capa do cordel A Discussão do Carioca Com o Pau-de-Arara. Xilogravura. Sob fundo amarelado, figura humana de braços 
-				abertos com garfo e faca nas mão. No topo aparece, 'Literatura de Cordel. A Discussão do Carioca Com o Pau-de-Arara.' 
-				Em baixo, 'Autor: Apolônio Alves dos Santos'">
-				<img src="images/discussao.jpg" style="width:100%"></img>
+				abertos com garfo e faca nas mão. No topo aparece, 'Literatura de Cordel. A Discussão do Carioca Com o Pau-de-Arara.'
+				Em baixo, 'Autor: Apolônio Alves dos Santos'"></img>
+				
 				</a>
 				</div>
 			</div>			
@@ -374,7 +396,7 @@ and (min-width : 1824px){
 				</a>
 				</div>
 			</div>
-			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
+			<div id="principal" class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
 							
 				<div class="card card-block">
 				
@@ -410,12 +432,14 @@ and (min-width : 1824px){
 				<img src="molas/linha.png" alt="linha ou cordel" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>				
 				<img src="molas/mola2.png" alt="mola que prende o folheto ao cordel" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(deg);  -ms-transform: rotate(4deg); /* IE 9 */
 				transform: rotate(4deg);"></img>
-				<a href="corona.html" target="_self"
-				alt="Capa do 'Cordel do Coronavírus'. Xilogravura. Sob fundo azul, imagem do planeta Terra com espinhos ou espículas imitando a forma de um vírus. No topo 'Autor: Tião Simpatia; Cordel do Coronavírus'. Em baixo 'Capa: Klévisson. Tupynanquim Editora, Fortaleza - Ceará; Março de 2020'.">
-				<img src="images/corona.jpg" style="width:100%"></img>
+				<a href="corona.html" target="_self">
+				<img src="images/corona.jpg" style="width:100%"
+				alt="Capa do 'Cordel do Coronavírus'. Xilogravura. Sob fundo azul, imagem do planeta Terra com espinhos ou espículas imitando a forma de um vírus. No topo 'Autor: Tião Simpatia; Cordel do Coronavírus'. 
+				Em baixo 'Capa: Klévisson. Tupynanquim Editora, Fortaleza - Ceará; Março de 2020'."></img>
 				</a>
 				</div>
 			</div>
+			
 			<div class="col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2">
 				<div class="card card-block">
 				<img src="molas/linha.png" alt="linha ou cordel" style="width: calc(100% + 30px); height: 2px; margin-top: 30px; margin-bottom: -30px; z-index: 1000; align-self: center; filter:hue-rotate(deg);"></img>					
@@ -447,7 +471,8 @@ and (min-width : 1824px){
 				<img src="molas/mola1.png" alt="mola que prende o folheto ao cordel" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(10deg);  -ms-transform: rotate(-1deg); /* IE 9 */
 				transform: rotate(-1deg);"></img>
 				<a href="lampiaonoinferno.html" target="_self">
-				<img src="images/lampiaonoinferno.png" style="width:100%"></img>
+				<img src="images/lampiaonoinferno.png" style="width:100%"
+				alt="Capa do Cordel 'A Chegada de Lampião no Inferno'. Sob fundo rosa suave a imagem de Lampião lutando com o Diabo. O primeiro empunha uma espingarda e  usa o seu chapeu. O segundo empunha um tridente. Em cima lê-se 'Autor Jose Pacheco. A Chegada de Lampião ao Inferno'. Em baixo,'Xilogravura de Marcelo Soares. Folhetaria Cordel 1954' "></img>
 				</a>
 				</div>
 			</div>
@@ -459,7 +484,8 @@ and (min-width : 1824px){
 				<img src="molas/mola1.png" alt="mola que prende o folheto ao cordel" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(-100deg);  -ms-transform: rotate(4deg); /* IE 9 */
 				transform: rotate(4deg);"></img>
 				<a href="miseria.html" target="_self">
-				<img src="images/miserias.png" style="width:100%"></img>
+				<img src="images/miserias.png" style="width:100%"
+				alt="Capa do Cordel 'As Misérias da Época'. Xilogravura. Sob fundo rosa suave, retrato do autor. Homem com bigode, casaco e gravata. Em cima lê-se, 'As Misérias da Época'. Em baixo, o nome do autor, 'Leandro Gomes Barbosa'"></img>
 				</a>
 				</div>
 			</div>
@@ -471,7 +497,8 @@ and (min-width : 1824px){
 				<img src="molas/mola1.png" alt="mola que prende o folheto ao cordel" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(-95deg);  -ms-transform: rotate(-20deg); /* IE 9 */
 				transform: rotate(-20deg);"></img>
 				<a href="dicas.html" target="_self">
-				<img src="images/dicas.png" style="width:100%"></img>
+				<img src="images/dicas.png" style="width:100%"
+				alt="Capa do Cordel 'Dicas para escrever um cordel'. Sob fundo azul claro, a figura do autor usando chapéu e óculos segurando um cordel na mão esquerda. Em cima lê-se o nome do autor 'Ismael Gaião'. Em baixo, o título, 'Dicas Para Escrever Um Cordel'"></img>
 				</a>
 				</div>
 			</div>
@@ -483,7 +510,8 @@ and (min-width : 1824px){
 				<img src="molas/mola1.png" alt="mola que prende o folheto ao cordel" style="width:10%; margin-bottom: -40px; z-index: 1000; align-self:center; filter:hue-rotate(-150deg);  -ms-transform: rotate(0deg); /* IE 9 */
 				transform: rotate(0deg);"></img>
 				<a href="sogra.html" target="_self">
-				<img src="images/sogra.png" style="width:100%"></img>
+				<img src="images/sogra.png" style="width:100%"
+				alt="Capa do Cordel 'A alma de uma sogra" ></img>
 				</a>
 				</div>
 			</div>
